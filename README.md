@@ -1,5 +1,4 @@
 # Pancake-Swap-React
-# PancakeSwap Clone
 
 ## This is a PancakeSwap website clone, built using :
 
