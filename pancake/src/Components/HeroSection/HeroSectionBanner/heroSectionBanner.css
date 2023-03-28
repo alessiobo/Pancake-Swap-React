@@ -17,7 +17,6 @@
   z-index: 1;
 }
 .hero-section .hero-section-content .hero-slideBar {
-  background: radial-gradient(104.12% 231.19% at -4.12% -5.83%, rgb(0, 87, 174) 0.52%, rgb(102, 124, 198) 67.41%, rgb(25, 229, 245) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 194px;
@@ -63,12 +62,9 @@
     margin: 10px 0 10px;
   }
 }
-.hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-content-img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 6px;
-  right: 0px;
+.hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btn {
+  display: flex;
+  gap: 10px;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider {
   cursor: pointer;
