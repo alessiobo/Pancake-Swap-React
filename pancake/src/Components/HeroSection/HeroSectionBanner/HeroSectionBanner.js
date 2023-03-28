@@ -1,6 +1,11 @@
 import "./heroSectionBanner.css";
 import Button from "../../UI/Buttons/Button";
 
+//Immagini:
+import bunny1 from "../images/hero-slidebar-bunny-1.webp";
+import bunny2 from "../images/hero-slidebar-bunny-2.webp";
+import bunny3 from "../images/hero-slidebar-bunny-3.webp";
+
 function HeroSectionBanner() {
   return (
     <div id="hero-slideBar" className="hero-slideBar">
@@ -24,7 +29,7 @@ function HeroSectionBanner() {
         <div className="hero-slideBar-img">
           <img
             className="hero-slideBar-img-bunny1"
-            src="./Components/HeroSection/images/hero-slidebar-bunny1.webp"
+            src={bunny1}
             alt="hero-slidebar"
           />
         </div>

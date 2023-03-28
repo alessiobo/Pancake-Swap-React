@@ -1,7 +1,13 @@
 import Button from "../UI/Buttons/Button";
 import "./heroSection.css";
-// import img from "./images/astronaut-bunny.webp";
 import HeroSectionBanner from "./HeroSectionBanner/HeroSectionBanner";
+
+//Immagini:
+import astronautBunny from "./images/astronaut-bunny.webp";
+import starL from "./images/star-left.webp";
+import starR from "./images/star-right.webp";
+import starTR from "./images/star-top-r.webp";
+import wave from "./images/wave-bg.svg";
 
 function HeroSection() {
   return (
@@ -26,35 +32,29 @@ function HeroSection() {
           <div className="hero-homepage-images">
             <img
               className="img-anim astronaut-bunny-img"
-              // src="./Components/HeroSection/images/astronaut-bunny.webp"
-              //   src={img["astronaut-bunny.webp"]}
-              //   src={img}
-              alt=""
+              src={astronautBunny}
+              alt="astronaut bunny"
             />
             <img
               className="astronaut-bunny-img-star hero-anim-star-2"
-              src="./Components/HeroSection/images/star-left.webp"
-              alt=""
+              src={starL}
+              alt="star"
             />
             <img
               className="astronaut-bunny-img-star hero-anim-star-5"
-              src="./Components/HeroSection/images/star-right.webp"
-              alt=""
+              src={starR}
+              alt="star"
             />
             <img
               className="astronaut-bunny-img-star hero-anim-star-3"
-              src="./Components/HeroSection/images/star-top-r.webp"
-              alt=""
+              src={starTR}
+              alt="star"
             />
           </div>
         </div>
       </div>
       <div className="hero-bg-wave">
-        <img
-          id="hero-wave"
-          src="./Components/HeroSection/images/wave-bg.svg"
-          alt=""
-        />
+        <img id="hero-wave" src={wave} alt="" />
       </div>
     </section>
   );
