@@ -37,13 +37,6 @@
     z-index: 1;
 
     .hero-slideBar {
-      // background: radial-gradient(
-      //   104.12% 231.19% at -4.12% -5.83%,
-      //   rgb(0, 87, 174) 0.52%,
-      //   rgb(102, 124, 198) 67.41%,
-      //   rgb(25, 229, 245) 100%
-      // );
-
       background-repeat: no-repeat;
       background-size: cover;
 
@@ -84,14 +77,6 @@
             margin: 10px 0 10px;
           }
         }
-        //
-        // .hero-slideBar-content-img {
-        //   position: absolute;
-        //   height: 100%;
-        //   width: 100%;
-        //   top: 6px;
-        //   right: 0px;
-        // }
 
         .hero-slideBar-btn {
           display: flex;
@@ -117,10 +102,18 @@
           span {
             width: 33%;
           }
-
-          span:nth-child(1) {
-            background-color: #fff;
+          //todo: modificare qui
+          .slidebarSpan1 {
             border-radius: 4px 0 0 4px;
+            background-color: #fff;
+          }
+          .slidebarSpan2 {
+            background-color: #fff;
+            border-radius: 0;
+          }
+          .slidebarSpan3 {
+            background-color: #fff;
+            border-radius: 0px 4px 4px 0px;
           }
         }
 
