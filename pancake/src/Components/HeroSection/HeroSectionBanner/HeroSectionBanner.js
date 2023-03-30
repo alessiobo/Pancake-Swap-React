@@ -45,7 +45,7 @@ function HeroSectionBanner() {
   const banner2 = useMemo(() => {
     return {
       id: 2,
-      subTitle: "LOL",
+      subTitle: "PancakeSwap x APTOS",
       title: "Hello Aptos Project Teams!",
       buttons: [{ type: "btn", img: "arrUP", bntTitle: "👋 Get in Touch!" }],
       img: bunny2,
