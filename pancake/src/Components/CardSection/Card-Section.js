@@ -1,4 +1,5 @@
 import React from "react";
+import "./card-section.css";
 import bunnyImage from "./img-icons/bunny-viola.png";
 import usersIcon from "./img-icons/users.png";
 import frecceIcon from "./img-icons/frecce.png";
