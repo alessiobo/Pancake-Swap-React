@@ -16,6 +16,7 @@
   align-items: center;
   padding: 50px;
   height: 750px;
+
 }
 
 .buyCake-top {
@@ -74,11 +75,11 @@
 .buyCake-data {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
+  grid-gap: 65px;
   width: 50%;
   position: relative;
-  left: -100px;
-  top: -100px;
+  right: -25px;
+  top: -90px;
   
 }
 .buyCake-big-data {
@@ -87,6 +88,8 @@
   color: #280d5f;
   font-weight: bold;
   position: relative;
+  
+  
 
 }
 .buyCake-big-data-dark{
@@ -99,6 +102,8 @@
   flex-direction: column;
   gap: 50px;
   justify-content: space-between;
+  position: relative;
+  right: 140px;
   
 
 }
