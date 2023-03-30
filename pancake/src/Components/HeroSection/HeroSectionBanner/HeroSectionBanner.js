@@ -1,3 +1,4 @@
+import "animate.css";
 import "./heroSectionBanner.css";
 import Button from "../../UI/Buttons/Button";
 
@@ -5,16 +6,25 @@ import Button from "../../UI/Buttons/Button";
 import bunny1 from "../images/hero-slidebar-bunny-1.webp";
 import bunny2 from "../images/hero-slidebar-bunny-2.webp";
 import bunny3 from "../images/hero-slidebar-bunny-3.webp";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { useEffect } from "react";
 
 function HeroSectionBanner() {
+  const bannerRef = useRef();
+
   const [slide, setSlide] = useState(1);
 
   const [banner, setBanner] = useState(1);
 
   const sliderClickHandler = useCallback((num) => {
-    setSlide(num);
+    bannerRef.current.className =
+      "hero-slideBar animate__animated animate__bounceOutLeft";
+
+    setTimeout(() => {
+      bannerRef.current.className =
+        "hero-slideBar animate__animated animate__bounceInRight";
+      setSlide(num);
+    }, 350);
   }, []);
 
   const banner1 = useMemo(() => {
@@ -86,7 +96,11 @@ function HeroSectionBanner() {
   }, [slide]);
 
   return (
-    <div style={banner.styleBG} className="hero-slideBar">
+    <div
+      ref={bannerRef}
+      style={banner.styleBG}
+      className="hero-slideBar animate__animated animate__bounce"
+    >
       <div className="hero-slideBar-content">
         <span>{banner.subTitle}</span>
         <h2>{banner.title}</h2>
