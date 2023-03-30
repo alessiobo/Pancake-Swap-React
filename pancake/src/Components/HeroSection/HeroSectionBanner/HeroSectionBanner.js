@@ -11,12 +11,15 @@ import { useEffect } from "react";
 
 function HeroSectionBanner() {
   const bannerRef = useRef();
+  const intervallID = useRef(0);
 
   const [slide, setSlide] = useState(1);
 
   const [banner, setBanner] = useState(1);
 
-  const sliderClickHandler = useCallback((num) => {
+  const [int, setInt] = useState(2);
+
+  const sliderHandler = useCallback((num) => {
     bannerRef.current.className =
       "hero-slideBar animate__animated animate__bounceOutLeft";
 
@@ -26,6 +29,15 @@ function HeroSectionBanner() {
       setSlide(num);
     }, 350);
   }, []);
+
+  const sliderClickHandler = (num) => {
+    sliderHandler(num);
+    clearInterval(intervallID.current);
+    setTimeout(() => {
+      const numInt = num + 1 === 4 ? 1 : num + 1;
+      setInt(numInt);
+    }, 3000);
+  };
 
   const banner1 = useMemo(() => {
     return {
@@ -95,6 +107,18 @@ function HeroSectionBanner() {
     }
   }, [slide]);
 
+  useEffect(() => {
+    intervallID.current = setInterval(() => {
+      slideLoop();
+    }, 5000);
+
+    return () => clearInterval(intervallID.current);
+  }, [int]);
+
+  const slideLoop = () => {
+    sliderHandler(int);
+    setInt((i) => (i === 3 ? 1 : i + 1));
+  };
   return (
     <div
       ref={bannerRef}
