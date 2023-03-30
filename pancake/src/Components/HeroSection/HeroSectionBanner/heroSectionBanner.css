@@ -65,6 +65,7 @@
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btn {
   display: flex;
   gap: 10px;
+  z-index: 2;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider {
   cursor: pointer;
@@ -84,12 +85,21 @@
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider span {
   width: 33%;
 }
-.hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider span:nth-child(1) {
-  background-color: #fff;
+.hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider .slidebarSpan1 {
   border-radius: 4px 0 0 4px;
+  background-color: #fff;
+}
+.hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider .slidebarSpan2 {
+  background-color: #fff;
+  border-radius: 0;
+}
+.hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider .slidebarSpan3 {
+  background-color: #fff;
+  border-radius: 0px 4px 4px 0px;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-img {
   position: absolute;
+  z-index: 0;
   bottom: -27px;
   right: 57px;
 }
