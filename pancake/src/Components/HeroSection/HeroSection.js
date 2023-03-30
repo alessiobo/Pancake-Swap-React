@@ -1,3 +1,4 @@
+import "animate.css";
 import Button from "../UI/Buttons/Button";
 import "./heroSection.css";
 
