@@ -90,7 +90,7 @@ function HeroSectionBanner() {
       <div className="hero-slideBar-content">
         <span>{banner.subTitle}</span>
         <h2>{banner.title}</h2>
-        {/* <div className="hero-slideBar-content-img"></div> */}
+
         <div className="hero-slideBar-btn">
           {banner.buttons?.map((el, k) => {
             return (

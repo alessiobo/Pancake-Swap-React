@@ -81,6 +81,7 @@
         .hero-slideBar-btn {
           display: flex;
           gap: 10px;
+          z-index: 2;
         }
 
         .hero-slideBar-btnSlider {
@@ -119,6 +120,7 @@
 
         .hero-slideBar-img {
           position: absolute;
+          z-index: 0;
 
           bottom: -27px;
           right: 57px;
