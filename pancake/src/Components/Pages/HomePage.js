@@ -1,4 +1,5 @@
 import HeroSection from "../HeroSection/HeroSection";
+import BuyCake from "../buyCake-section/buyCake-section";
 import TwinSection from "../twin-section/TwinSection";
 
 function HomePage() {
@@ -7,6 +8,7 @@ function HomePage() {
       HomePage SUCA
       <HeroSection />
       <TwinSection />
+      <BuyCake />
     </div>
   );
 }
