@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
 .card-section {
   display: flex;
   flex-direction: column;
@@ -78,12 +92,6 @@
   color: #7645d9;
   font-weight: 600;
   line-height: 1.1;
-}
-.card-container .card-all .h2-card2 {
-  color: #007aff;
-}
-.card-container .card-all .h2-card3 {
-  color: #ed4b9e;
 }
 .card-container .card-all .span-cards {
   position: absolute;

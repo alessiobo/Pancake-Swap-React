@@ -27,6 +27,17 @@ export default function CardSection() {
     },
   ];
 
+  const getColor = (title) => {
+    switch (title) {
+      case "trades":
+        return "#007aff";
+      case "staked":
+        return "#ed4b9e";
+      default:
+        return "#7645d9";
+    }
+  };
+
   return (
     <div className="card-section">
       <img src={bunnyImage} alt="bunny" className="bunny-viola" />
@@ -49,7 +60,13 @@ export default function CardSection() {
             <img src={data.logo} alt="logo" className="card-logo" />
             <h2 className="first-h2">{data.firstTitle}</h2>
             <br />
-            <h2 className="card-section-h2">{data.secondTitle}</h2>
+            <h2
+              className="card-section-h2"
+              style={{ color: getColor(data.secondTitle) }}
+            >
+              {data.secondTitle}
+            </h2>
+
             <br />
             <span className="span-cards">{data.span}</span>
           </div>
