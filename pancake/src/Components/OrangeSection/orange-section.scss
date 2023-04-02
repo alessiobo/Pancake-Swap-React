@@ -1,4 +1,6 @@
-@use "../orange-section/variables.scss" as var;
+//sass --watch orange-section.scss orange-section.css
+
+@use "../OrangeSection/variables.scss" as var;
 
 @keyframes animate2 {
     from {

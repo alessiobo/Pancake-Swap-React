@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import OrangeSection from "./Components/OrangeSection/OrangeSection";
 import HomePage from "./Components/Pages/HomePage";
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
-      <OrangeSection/>
+     
     </div>
   );
 }

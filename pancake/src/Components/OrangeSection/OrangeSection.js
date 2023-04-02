@@ -1,8 +1,17 @@
 import React from "react"
 import "animate.css";
-import Button from "../UI/Buttons/Button";
 import "./orange-section.css";
-
+import svg30 from "./icons/svgexport-30.svg"
+import svg32 from "./icons/svgexport-32.svg"
+import img_2 from "./imgs/2.webp"
+import img_4 from "./imgs/4.webp"
+import img_6 from "./imgs/6@2x.webp"
+import ball7 from "./imgs/7@2x.webp"
+import ball9 from "./imgs/9@2x.webp"
+import bottom_left from "./imgs/bottom-left@2x.webp"
+import green from "./imgs/green@2x.webp"
+import red from "./imgs/red@2x.webp"
+import top_right from "./imgs/top-right@2x.webp"
 function OrangeSection() {
     return (
         <div>
@@ -15,7 +24,7 @@ function OrangeSection() {
                                 <h3>Provably fair, on-chain games.</h3>
 
                                 <div>
-                                    <h3 style="margin-bottom: 40px">win big with PancakeSwap.</h3>
+                                    <h3>win big with PancakeSwap.</h3>
                                 </div>
                             </div>
                         </div>
@@ -23,7 +32,7 @@ function OrangeSection() {
                             <div className="left-card">
                                 <div className="icon-wrapper">
                                     <img
-                                        src="../Pancake/Components/orange-section/icons/svgexport-30.svg"
+                                        src={svg30}
                                         alt="icon"
                                     />
                                 </div>
@@ -35,15 +44,15 @@ function OrangeSection() {
 
                                 </div>
                                 <div className="button-orange-card">
-                                    <link to="https://www.youtube.com/watch?v=bUcG7vd_7aQ"
-                                        className="link_button">
-                                        <button className="btn">Play</button></link>
+                                   
+                                        <button className="btn large">Play</button>
                                 </div>
                             </div>
                             <div className="right-card">
                                 <div className="icon-wrapper">
                                     <img
-                                        src="../Pancake/Components/orange-section/icons/svgexport-32.svg"
+                                        src={svg32}
+                                        alt="ticket"
                                     />
                                 </div>
                                 <div className="text-card-wrapper">
@@ -53,12 +62,7 @@ function OrangeSection() {
                                     <h3>Buy tickets with CAKE, win CAKE if your numbers match</h3>
                                 </div>
                                 <div className="button-orange-card">
-                                    <link to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                                        target="_blank"
-                                        className="link_button"
-                                    >
-                                        <button className="btn">Buy Tickets</button>
-                                    </link>
+                                        <button className="btn large">Buy Tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -66,30 +70,37 @@ function OrangeSection() {
                 </div>
                 <div className="bottom-left-wrapper">
                     <img
-                        src="../Pancake/Components/orange-section/imgs/bottom-left@2x.webp"
+                        src={bottom_left}
+                        alt="bottom left"
                     />
 
-                    <img src="../Pancake/Components/orange-section/imgs/green@2x.webp" />
+                    <img src={green}
+                        alt="green" />
 
-                    <img src="../Pancake/Components/orange-section/imgs/red@2x.webp" />
+                    <img src={red}
+                    alt="red" />
 
                     <img
-                        src="../Pancake/Components/orange-section/imgs/top-right@2x.webp"
+                        src={top_right}
+                        alt="top right"
                     />
                 </div>
                 <div className="top-right-wrapper">
-                    <img src="../Pancake/Components/orange-section/imgs/2.webp" />
+                    <img src={img_2} alt="ball 2" />
 
-                    <img src="../Pancake/Components/orange-section/imgs/4.webp" />
+                    <img src={img_4} alt="ball 4" />
 
-                    <img src="../Pancake/Components/orange-section/imgs/6@2x.webp" />
+                    <img src={img_6} alt="ball 6" />
 
                     <img
                         className="ball7"
-                        src="../Pancake/Components/orange-section/imgs/7@2x.webp"
+                        src={ball7}
+                        alt="ball 7"
                     />
 
-                    <img src="../Pancake/Components/orange-section/imgs/9@2x.webp" />
+                    <img src={ball9} 
+                        alt="ball 9"
+                    />
                 </div>
             </section>
         </div>

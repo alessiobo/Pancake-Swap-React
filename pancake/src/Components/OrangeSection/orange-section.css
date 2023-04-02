@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Kanit", sans-serif;
+}
+
 @keyframes animate2 {
   from {
     transform: translate(0px, 20px);
   }
+}
+* {
+  font-family: "Kanit", sans-serif;
 }
 
 .orange-section-container {
@@ -306,5 +313,7 @@
   left: 20px;
   animation: animate2 2s ease-in-out infinite alternate;
 }
-
+.large {
+  width: 100%;
+}
 /*# sourceMappingURL=orange-section.css.map */
