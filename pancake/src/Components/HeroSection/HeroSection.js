@@ -27,7 +27,9 @@ function HeroSection() {
               platform in the galaxy.
             </p>
             <div className="hero-homepage-buttons">
-              <Button type={"btn"}>Connect Wallet</Button>
+              <Button type={"btn"} img={"arrR"}>
+                Connect Wallet
+              </Button>
               <Button type="btn-thin">Trade Now</Button>
             </div>
           </div>
