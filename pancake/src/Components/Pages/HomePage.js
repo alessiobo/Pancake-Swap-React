@@ -6,7 +6,6 @@ import CardSection from "../CardSection/Card-Section";
 function HomePage() {
   return (
     <div>
-      HomePage SUCA
       <HeroSection />
       <CardSection />
       <TwinSection />
