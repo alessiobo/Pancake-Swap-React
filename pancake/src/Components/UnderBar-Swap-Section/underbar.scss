@@ -1,0 +1,44 @@
+//sass --watch underbar.scss underbar.css
+
+#underbar {
+    height: 42px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    max-width: 100%;
+    div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 10px;
+
+        .underbar_link {
+            text-decoration: none;
+            color: #7a6eaa;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+    }
+    .clicked_wrapper {
+        position: relative;
+        top: 12px;
+        display: flex;
+        flex-direction: column;
+        .underbar_link {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bolder;
+            color: #7645d9;
+        }
+    }
+}
+
+
+
+.colored_bar {
+    height: 4px;
+    width: 100%;
+    background-color: #1fc7D4;
+    border-radius: 10px;
+}
