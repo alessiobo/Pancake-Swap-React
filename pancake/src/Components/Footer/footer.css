@@ -1,6 +1,7 @@
 .footer {
   background-color: #27262c;
-
+  position: relative;
+  z-index: 100;
   padding: 51px 32px;
 
   display: flex;
