@@ -1,4 +1,5 @@
 import Button from "../UI/Buttons/Button";
+import Checkbox from "../UI/Checkbox/Checkbox";
 import "./footer.css";
 
 //Footer images
@@ -131,7 +132,7 @@ function Footer() {
           </div>
           <div className="footer-change-mode-buy-cake">
             <div className="footer-btn-mode-btn-lng">
-              <div className="checkbox-btn-container">
+              {/* <div className="checkbox-btn-container">
                 <input
                   className="checkbox-btn-input"
                   type="checkbox"
@@ -153,7 +154,8 @@ function Footer() {
                     alt=""
                   />
                 </label>
-              </div>
+              </div> */}
+              <Checkbox />
               <div className="footer-btn-lng">
                 <button
                   style={{ color: "white" }}
