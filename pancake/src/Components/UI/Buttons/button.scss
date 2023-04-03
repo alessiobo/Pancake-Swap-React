@@ -64,6 +64,12 @@ $black: #191326;
   @include btn();
 }
 
+.btn-small {
+  @include btn();
+  height: 32px;
+  gap: 5px;
+}
+
 .btn-invert {
   @include btn();
   background-color: #fff;

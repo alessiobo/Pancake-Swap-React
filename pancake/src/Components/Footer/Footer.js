@@ -1,216 +1,163 @@
+import Button from "../UI/Buttons/Button";
+import Checkbox from "../UI/Checkbox/Checkbox";
 import "./footer.css";
+
+//Footer images
+import bunnyToken from "./footer-images/cake-token.png";
+import i_lan from "./footer-images/icon-lan.png";
+import logo from "./footer-images/color-white.svg";
+
+//Social Icon
+import i_discord from "./footer-images/socialIcons/social-icon-discord.png";
+import i_github from "./footer-images/socialIcons/social-icon-github.png";
+import i_instagram from "./footer-images/socialIcons/social-icon-instagram.svg";
+import i_media from "./footer-images/socialIcons/social-icon-media.png";
+import i_reddit from "./footer-images/socialIcons/social-icon-reddit.png";
+import i_youtube from "./footer-images/socialIcons/social-icon-youtube.png";
+import i_telegram from "./footer-images/socialIcons/social-icon-telegram.png";
+import i_twitter from "./footer-images/socialIcons/social-icon-twitter.png";
 
 function Footer() {
   return (
     <footer>
-      <div class="footer">
-        <div class="footer-container">
-          <div class="footer-links-container">
-            <div class="footer-container-lists-social">
-              <div class="footer-container-lists">
-                <div class="footer-list">
-                  <ul class="footer-ul">
-                    <h4 class="footer-h4">ABOUT</h4>
-                    <a class="footer-contact-a" href="">
-                      <li class="footer-li">Contact</li>
+      <div className="footer">
+        <div className="footer-container">
+          <div className="footer-links-container">
+            <div className="footer-container-lists-social">
+              <div className="footer-container-lists">
+                <div className="footer-list">
+                  <ul className="footer-ul">
+                    <h4 className="footer-h4">ABOUT</h4>
+                    <a className="footer-contact-a" href="">
+                      <li className="footer-li" style={{ color: "#ffb237" }}>
+                        Contact
+                      </li>
                     </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Brand</li>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Brand</li>
                     </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Blog</li>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Blog</li>
                     </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Community</li>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Community</li>
                     </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Litepaper</li>
-                    </a>
-                  </ul>
-                </div>
-                <div class="footer-list">
-                  <ul class="footer-ul">
-                    <h4 class="footer-h4">HELP</h4>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Customer Support</li>
-                    </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Troubleshooting</li>
-                    </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Guides</li>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Litepaper</li>
                     </a>
                   </ul>
                 </div>
-                <div class="footer-list">
-                  <ul class="footer-ul">
-                    <h4 class="footer-h4">DEVELOPERS</h4>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Github</li>
+                <div className="footer-list">
+                  <ul className="footer-ul">
+                    <h4 className="footer-h4">HELP</h4>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Customer Support</li>
                     </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Documentation</li>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Troubleshooting</li>
                     </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Blue Bounty</li>
-                    </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Audits</li>
-                    </a>
-                    <a class="footer-a" href="">
-                      <li class="footer-li">Careers</li>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Guides</li>
                     </a>
                   </ul>
                 </div>
-                <div class="footer-logo">
-                  <img
-                    class="footer-img-logo"
-                    src="../DesignSystem/images/Logo/color-white.svg"
-                    alt=""
-                  />
+                <div style={{ width: "184px" }} className="footer-list">
+                  <ul className="footer-ul">
+                    <h4 className="footer-h4">DEVELOPERS</h4>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Github</li>
+                    </a>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Documentation</li>
+                    </a>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Blue Bounty</li>
+                    </a>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Audits</li>
+                    </a>
+                    <a className="footer-a" href="">
+                      <li className="footer-li">Careers</li>
+                    </a>
+                  </ul>
+                </div>
+                <div className="footer-logo">
+                  <img className="footer-img-logo" src={logo} alt="" />
                 </div>
               </div>
-              <div class="footer-container-social">
-                <div class="footer-social">
-                  <a class="footer-social-a" href="twitter">
+              <div className="footer-container-social">
+                <div className="footer-social">
+                  <a className="footer-social-a" href="twitter">
+                    <img className="footer-img-social" src={i_twitter} alt="" />
+                  </a>
+                  <a className="footer-social-a" href="telegram">
                     <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-twitter-48 1.png"
+                      className="footer-img-social"
+                      src={i_telegram}
                       alt=""
                     />
                   </a>
-                  <a class="footer-social-a" href="telegram">
+                  <a className="footer-social-a" href="reddit">
+                    <img className="footer-img-social" src={i_reddit} alt="" />
+                  </a>
+                  <a className="footer-social-a" href="instagram">
                     <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-telegram-48 1.png"
+                      className="footer-img-social footer-instagram-fix"
+                      src={i_instagram}
                       alt=""
                     />
                   </a>
-                  <a class="footer-social-a" href="reddit">
-                    <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-reddit-48 1.png"
-                      alt=""
-                    />
+                  <a className="footer-social-a" href="github">
+                    <img className="footer-img-social" src={i_github} alt="" />
                   </a>
-                  <a class="footer-social-a" href="instagram">
-                    <img
-                      class="footer-img-social footer-instagram-fix"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-instagram-50 1.svg"
-                      alt=""
-                    />
+                  <a className="footer-social-a" href="discord">
+                    <img className="footer-img-social" src={i_discord} alt="" />
                   </a>
-                  <a class="footer-social-a" href="github">
-                    <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-github-48 (2) 1.png"
-                      alt=""
-                    />
+                  <a className="footer-social-a" href="medio">
+                    <img className="footer-img-social" src={i_media} alt="" />
                   </a>
-                  <a class="footer-social-a" href="discord">
-                    <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-discordia-48 1.png"
-                      alt=""
-                    />
-                  </a>
-                  <a class="footer-social-a" href="medio">
-                    <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/others-icons/icons8-logo-medio-48 1.png"
-                      alt=""
-                    />
-                  </a>
-                  <a class="footer-social-a" href="youtube">
-                    <img
-                      class="footer-img-social"
-                      src="../DesignSystem/images/Icons/social-icons/icons8-riproduci-youtube-48 1.png"
-                      alt=""
-                    />
+                  <a className="footer-social-a" href="youtube">
+                    <img className="footer-img-social" src={i_youtube} alt="" />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="footer-container-hr">
-              <div class="footer-hr">
+            <div className="footer-container-hr">
+              <div className="footer-hr">
                 <hr />
               </div>
             </div>
           </div>
-          <div class="footer-change-mode-buy-cake">
-            <div class="footer-btn-mode-btn-lng">
-              {/* <!-- <div class="footer-btn-mode">
-                  <input
-                    class="footer-input-mode"
-                    type="checkbox"
-                    id="switch-button"
-                  />
-                  <label class="footer-label" for="switch-button">
-                    <img
-                      class="footer-sun"
-                      src="./Components/footer/sun-solid.svg"
-                    />
-                    <img
-                      class="footer-moon"
-                      src="./Components/footer/moon-solid.svg"
-                      alt=""
-                    />
-                  </label>
-                </div> --> */}
-              <div class="checkbox-btn-container">
-                <input
-                  class="checkbox-btn-input"
-                  type="checkbox"
-                  id="switch-button1"
-                />
-                <label
-                  class="checkbox-btn-label footer-label-color"
-                  for="switch-button1"
+          <div className="footer-change-mode-buy-cake">
+            <div className="footer-btn-mode-btn-lng">
+              <Checkbox />
+              <div className="footer-btn-lng">
+                <button
+                  style={{ color: "white" }}
+                  className="footer-btn-language"
                 >
-                  <img
-                    class="checkbox-btn-icon checkbox-btn-icon-sun"
-                    src="./Css-global/images/sun.svg"
-                  />
-
-                  <img
-                    class="checkbox-btn-icon checkbox-btn-icon-moon"
-                    src="./Css-global/images/moon.svg"
-                  />
-                </label>
-              </div>
-              <div class="footer-btn-lng">
-                <button class="footer-btn-language">
-                  <img
-                    class="footer-img-lng"
-                    src="../DesignSystem/images/Icons/others-icons/icons8-geografia-48 1.png"
-                    alt=""
-                  />
+                  <img className="footer-img-lng" src={i_lan} alt="" />
                   EN
                 </button>
               </div>
             </div>
-            <div class="footer-price-buy-cake">
-              <div class="footer-icon-bunny-price">
-                <a class="footer-icon-price" href="">
+            <div className="footer-price-buy-cake">
+              <div className="footer-icon-bunny-price">
+                <a className="footer-icon-price" href="#">
                   <img
-                    class="footer-img-bunny-logo"
-                    src="../DesignSystem/images/Logo/cake-token.png"
+                    className="footer-img-bunny-logo"
+                    src={bunnyToken}
                     alt="logo"
                   />
-                  <span class="footer-price">
+                  <span className="footer-price">
                     <b>$4.011</b>
                   </span>
                 </a>
               </div>
-              <div class="footer-buycake">
-                <button class="btn">
+              <div className="footer-buycake">
+                <Button type={"btn-small"} img={"arrR"}>
                   Buy CAKE
-                  <img
-                    class="footer-right-arrow"
-                    src="./Components/footer/right-arrow.svg"
-                    alt=""
-                  />
-                </button>
+                </Button>
               </div>
             </div>
           </div>
