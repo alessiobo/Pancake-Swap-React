@@ -9,14 +9,14 @@ import Navbar from "./Components/Navbar/Navbar";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/swap" element={<SwapPage/>}/>
         <Route path="/limit" element={<LimitPage/>}/>
         <Route path="/liquidity" element={<LiquidityPage/>}/>
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

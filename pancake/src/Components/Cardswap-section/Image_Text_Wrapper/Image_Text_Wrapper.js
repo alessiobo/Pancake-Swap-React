@@ -7,7 +7,7 @@ function Image_text_Wrapper() {
                 <a href="www.google.com" className="Bridge_assets">Bridge assets to BNB Chain</a>
             </div>
             <div>
-            <a className="need_help">Need Help?</a>
+            <a className="need_help" href="google">Need Help?</a>
             <img src={help_img} alt="help.png"></img>
             </div>
         </div>

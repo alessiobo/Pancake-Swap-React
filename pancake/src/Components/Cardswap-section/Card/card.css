@@ -4,8 +4,37 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 20px;
-  height: 436px;
+  height: 588px;
   width: 326px;
+}
+.card .Upper-Card-Container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card .Upper-Card-Container :first-child {
+  margin-bottom: 15px;
+  color: #280D5f;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card .Upper-Card-Container :nth-child(2) {
+  font-size: 1rem;
+  color: #7a6eaa;
+  font-weight: 500;
+}
+.card .Upper-Card-Container :nth-child(3) {
+  display: flex;
+}
+.card .Upper-Card-Container :nth-child(3) div {
+  margin-bottom: 0px;
+}
+.card .Upper-Card-Container :nth-child(3) div img, .card .Upper-Card-Container :nth-child(3) div p {
+  max-height: 24px;
+  max-width: 24px;
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=card.css.map */

@@ -2,10 +2,13 @@
 
 .Image_Text_Wrapper {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
-    height: 358px;
+    // height: 358px;   
     width: 100%;
-    padding-top: 16px;    
+    padding-top: 16px;
+    position: relative;    
+    z-index: 0;
     div {
         display: flex;
         justify-content: center;
@@ -25,8 +28,8 @@
             height: 42px;
         }
         img {
-            width: 100%;
-            height: 100%;
+            max-width: 160px;
+            max-height: 180px;
         }
 
     }
