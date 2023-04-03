@@ -13,7 +13,7 @@ function Button(props) {
   }
 
   return (
-    <button className={props.type}>
+    <button style={props.addStyle} className={props.type}>
       {props.children}
       {imgSrc !== "" && (
         <img
