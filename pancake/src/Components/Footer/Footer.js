@@ -4,6 +4,8 @@ import "./footer.css";
 
 //Footer images
 import bunnyToken from "./footer-images/cake-token.png";
+import i_lan from "./footer-images/icon-lan.png";
+import logo from "./footer-images/color-white.svg";
 
 //Social Icon
 import i_discord from "./footer-images/socialIcons/social-icon-discord.png";
@@ -80,11 +82,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="footer-logo">
-                  <img
-                    className="footer-img-logo"
-                    src="../DesignSystem/images/Logo/color-white.svg"
-                    alt=""
-                  />
+                  <img className="footer-img-logo" src={logo} alt="" />
                 </div>
               </div>
               <div className="footer-container-social">
@@ -132,40 +130,13 @@ function Footer() {
           </div>
           <div className="footer-change-mode-buy-cake">
             <div className="footer-btn-mode-btn-lng">
-              {/* <div className="checkbox-btn-container">
-                <input
-                  className="checkbox-btn-input"
-                  type="checkbox"
-                  id="switch-button1"
-                />
-                <label
-                  className="checkbox-btn-label footer-label-color"
-                  for="switch-button1"
-                >
-                  <img
-                    className="checkbox-btn-icon checkbox-btn-icon-sun"
-                    src="./Css-global/images/sun.svg"
-                    alt=""
-                  />
-
-                  <img
-                    className="checkbox-btn-icon checkbox-btn-icon-moon"
-                    src="./Css-global/images/moon.svg"
-                    alt=""
-                  />
-                </label>
-              </div> */}
               <Checkbox />
               <div className="footer-btn-lng">
                 <button
                   style={{ color: "white" }}
                   className="footer-btn-language"
                 >
-                  <img
-                    className="footer-img-lng"
-                    src="../DesignSystem/images/Icons/others-icons/icons8-geografia-48 1.png"
-                    alt=""
-                  />
+                  <img className="footer-img-lng" src={i_lan} alt="" />
                   EN
                 </button>
               </div>
