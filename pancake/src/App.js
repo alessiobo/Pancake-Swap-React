@@ -9,12 +9,15 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 
 import useCookies from "./Components/UI/DarkMode/useCookies";
+import Checkbox from "./Components/UI/Checkbox/Checkbox";
 
 function App() {
   const { mode, setMode } = useCookies();
 
   return (
     <div>
+      {/* //todo: checkbox di prova darkMode  --da eliminare */}
+      <Checkbox mode={mode} setMode={setMode} />
       <contextDarkMode.Provider value={mode}>
         <Navbar />
         <Routes>
