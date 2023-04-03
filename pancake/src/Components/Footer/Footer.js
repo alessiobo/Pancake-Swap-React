@@ -155,11 +155,7 @@ function Footer() {
                 </a>
               </div>
               <div className="footer-buycake">
-                <Button
-                  addStyle={{ height: "32px", gap: "5px" }}
-                  type={"btn"}
-                  img={"arrR"}
-                >
+                <Button type={"btn-small"} img={"arrR"}>
                   Buy CAKE
                 </Button>
               </div>
