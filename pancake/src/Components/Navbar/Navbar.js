@@ -1,3 +1,4 @@
+import Button from "../UI/Buttons/Button";
 import "./navbar.css";
 
 function Navbar() {
@@ -139,7 +140,7 @@ function Navbar() {
           </div>
         </div>
         <div class="navbar-btn-connect-wallet">
-          <button class="btn">Connect Wallet</button>
+          <Button type={"btn-small"}>Connect Wallet</Button>
         </div>
       </div>
     </div>

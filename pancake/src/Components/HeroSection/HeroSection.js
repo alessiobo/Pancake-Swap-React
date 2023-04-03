@@ -1,7 +1,9 @@
 import "animate.css";
-import Button from "../UI/Buttons/Button";
 import "./heroSection.css";
 
+import Button from "../UI/Buttons/Button";
+import { useContext } from "react";
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
 import HeroSectionBanner from "./HeroSectionBanner/HeroSectionBanner";
 
 //Immagini:
@@ -10,10 +12,16 @@ import starL from "./images/star-left.webp";
 import starR from "./images/star-right.webp";
 import starTR from "./images/star-top-r.webp";
 import wave from "./images/wave-bg.svg";
+import darkwave from "./images/wave-bg-d.svg";
 
 function HeroSection() {
+  const darkMode = useContext(contextDarkMode);
+
   return (
-    <section id="hero-section" className="hero-section">
+    <section
+      id="hero-section"
+      className={`hero-section ${darkMode ? "hero-section-dark" : ""}`}
+    >
       <div className="hero-section-content">
         <HeroSectionBanner />
 
@@ -22,7 +30,11 @@ function HeroSection() {
             <h1 className="hero-homepage-text-title">
               The moon is made of pancakes.
             </h1>
-            <p className="hero-homepage-text-parag">
+            <p
+              className={`hero-homepage-text-parag ${
+                darkMode ? "hero-homepage-text-parag-dark" : ""
+              }`}
+            >
               Trade, earn, and win crypto on the most popular decentralized
               platform in the galaxy.
             </p>
@@ -58,7 +70,7 @@ function HeroSection() {
         </div>
       </div>
       <div className="hero-bg-wave">
-        <img id="hero-wave" src={wave} alt="" />
+        <img id="hero-wave" src={darkMode ? darkwave : wave} alt="" />
       </div>
     </section>
   );

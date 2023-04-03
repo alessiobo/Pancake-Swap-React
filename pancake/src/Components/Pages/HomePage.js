@@ -8,14 +8,11 @@ import CardSection from "../CardSection/Card-Section";
 function HomePage() {
   return (
     <div>
-      
-      <Link to="swap">HomePage SUCA</Link>
       <HeroSection />
       <CardSection />
       <TwinSection />
-      <OrangeSection/>
+      <OrangeSection />
       <BuyCake />
-      
     </div>
   );
 }

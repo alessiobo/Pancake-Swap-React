@@ -94,7 +94,6 @@
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   color: #fff;
   height: 32px;
-  gap: 5px;
 }
 .btn-small a {
   color: inherit;

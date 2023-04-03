@@ -4,13 +4,15 @@ import "./checkbox.css";
 import moon from "./Icon/moon.svg";
 import sun from "./Icon/sun.svg";
 
-function Checkbox() {
+function Checkbox({ mode, setMode }) {
   return (
     <div className="checkbox-btn-container">
       <input
         className="checkbox-btn-input"
         type="checkbox"
         id="switch-button1"
+        checked={mode}
+        onChange={() => setMode(!mode)}
       />
       <label
         className="checkbox-btn-label footer-label-color"
