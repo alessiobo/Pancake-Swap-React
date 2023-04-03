@@ -8,10 +8,14 @@ import LiquidityPage from "./Components/Pages/LiquidityPage";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 
+import useCookies from "./Components/UI/DarkMode/useCookies";
+
 function App() {
+  const { mode, setMode } = useCookies();
+
   return (
     <div>
-      <contextDarkMode.Provider value={true}>
+      <contextDarkMode.Provider value={mode}>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -19,7 +23,7 @@ function App() {
           <Route path="/limit" element={<LimitPage />} />
           <Route path="/liquidity" element={<LiquidityPage />} />
         </Routes>
-        <Footer />
+        <Footer mode={mode} setMode={setMode} />
       </contextDarkMode.Provider>
     </div>
   );

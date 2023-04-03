@@ -17,8 +17,6 @@ import darkwave from "./images/wave-bg-d.svg";
 function HeroSection() {
   const darkMode = useContext(contextDarkMode);
 
-  console.log(darkMode);
-
   return (
     <section
       id="hero-section"

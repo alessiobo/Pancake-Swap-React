@@ -17,7 +17,7 @@ import i_youtube from "./footer-images/socialIcons/social-icon-youtube.png";
 import i_telegram from "./footer-images/socialIcons/social-icon-telegram.png";
 import i_twitter from "./footer-images/socialIcons/social-icon-twitter.png";
 
-function Footer() {
+function Footer({ mode, setMode }) {
   return (
     <footer>
       <div className="footer">
@@ -130,7 +130,7 @@ function Footer() {
           </div>
           <div className="footer-change-mode-buy-cake">
             <div className="footer-btn-mode-btn-lng">
-              <Checkbox />
+              <Checkbox mode={mode} setMode={setMode} />
               <div className="footer-btn-lng">
                 <button
                   style={{ color: "white" }}
