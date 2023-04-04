@@ -9,13 +9,13 @@ function Navbar() {
     <div class="navbar">
       <div class="navbar-container-logo-menu">
         <div class="navbar-logo-home">
-          <a href="#home">
+          <Link to={"/"}>
             <img
               class="navbar-img-logo"
               src="../DesignSystem/images/Logo/color-black.svg"
               alt="logo"
             />
-          </a>
+          </Link>
         </div>
         <div class="navbar-menus">
           <div class="navbar-dropdowns">
