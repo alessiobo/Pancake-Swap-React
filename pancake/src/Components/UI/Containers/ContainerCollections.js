@@ -5,9 +5,9 @@ function ContainerCollections(props) {
   return (
     <section>
       <div className="containerCollection-title">
-        <h2>Placheolder</h2>
+        <h2>{props.title}</h2>
         <Button addStyle={{ height: "32px" }} type={"btn-thin"}>
-          Placheolder
+          {props.btnTitle}
         </Button>
       </div>
       <div>{props.children}</div>

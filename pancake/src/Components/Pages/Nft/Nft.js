@@ -10,7 +10,10 @@ function Nft() {
       {/* Navbar */}
       {/* Title */}
       <div>
-        <ContainerCollections>
+        <ContainerCollections
+          title={"Newest Collections"}
+          btnTitle={"View All"}
+        >
           <div className="nft-container">
             <CardCollection />
             <CardCollection />
