@@ -27,6 +27,11 @@
   left: 10px;
   border: 4px solid white;
 }
+@media (max-width: 370px) {
+  .cardCollection-circle img {
+    bottom: 20px;
+  }
+}
 
 .cardCollection-description {
   position: relative;
@@ -38,6 +43,11 @@
   font-size: 19px;
   font-weight: bold;
   margin: 0 0 8px;
+}
+@media (max-width: 370px) {
+  .cardCollection-description h4 {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=cardCollection.css.map */
