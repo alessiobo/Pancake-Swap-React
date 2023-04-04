@@ -2,6 +2,7 @@ import "./nft.css";
 
 import CardCollection from "../../UI/Cards/CardCollection/CardCollection";
 import Button from "../../UI/Buttons/Button";
+import ContainerCollections from "../../UI/Containers/ContainerCollections";
 
 function Nft() {
   return (
@@ -9,19 +10,19 @@ function Nft() {
       {/* Navbar */}
       {/* Title */}
       <div>
-        <div>
-          <h3>Newest Collections</h3>
-          <Button type={"btn-thin"}>View All</Button>
-        </div>
-
-        <div className="nft-container">
-          <CardCollection />
-          <CardCollection />
-          <CardCollection />
-          <CardCollection />
-          <CardCollection />
-          <CardCollection />
-        </div>
+        <ContainerCollections
+          title={"Newest Collections"}
+          btnTitle={"View All"}
+        >
+          <div className="nft-container">
+            <CardCollection />
+            <CardCollection />
+            <CardCollection />
+            <CardCollection />
+            <CardCollection />
+            <CardCollection />
+          </div>
+        </ContainerCollections>
       </div>
     </section>
   );
