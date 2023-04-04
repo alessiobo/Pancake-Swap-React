@@ -8,6 +8,8 @@ import world_purple from "./Icons/world_purple.svg"
 import gear_purple from "./Icons/gear_purple.svg"
 import bnb_golden from "./Icons/bnb_golden.svg"
 import arrow_down_purple from "./Icons/arrow_down_purple.svg"
+import ethereum_icon from "./Icons/ethereum.png"
+import aptos_icon from "./Icons/aptos_icon_white.svg"
 function Navbar() {
   return (
     <div class="navbar">
@@ -123,24 +125,24 @@ function Navbar() {
             <a href="">
               <img
                 class="navbar-img-change-crypto"
-                src="../DesignSystem/images/Icons/standard-pankake-icons/one.png"
-                alt=""
+                src={bnb_golden}
+                alt="bnb_golden"
               />
               BNB Smart Chain
             </a>
             <a href="">
               <img
                 class="navbar-img"
-                src="./Components/header-navbar-images/ethereum.png"
-                alt=""
+                src={ethereum_icon}
+                alt="ethereum"
               />
               Ethereum
             </a>
             <a href="">
               <img
                 class="navbar-img"
-                src="./Components/header-navbar-images/aptos-logo.png"
-                alt=""
+                src={aptos_icon}
+                alt="aptos_icon"
               />
               Aptos
             </a>
