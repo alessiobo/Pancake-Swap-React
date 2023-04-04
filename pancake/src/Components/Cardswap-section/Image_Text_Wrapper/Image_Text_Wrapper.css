@@ -1,10 +1,8 @@
 .Image_Text_Wrapper {
   display: flex;
-  overflow: hidden;
   flex-direction: column;
   width: 100%;
   padding-top: 16px;
-  position: relative;
   z-index: 0;
 }
 .Image_Text_Wrapper div {
@@ -21,10 +19,14 @@
   text-align: center;
 }
 .Image_Text_Wrapper div .need_help {
-  background-color: purple;
+  background-color: #7a6eaa;
   border-radius: 10px;
   width: 168px;
   height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .Image_Text_Wrapper div img {
   max-width: 160px;

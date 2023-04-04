@@ -2,12 +2,11 @@
 
 .Image_Text_Wrapper {
     display: flex;
-    overflow: hidden;
     flex-direction: column;
     // height: 358px;   
     width: 100%;
     padding-top: 16px;
-    position: relative;    
+   
     z-index: 0;
     div {
         display: flex;
@@ -22,10 +21,14 @@
             text-align: center;
         }
         .need_help {
-            background-color: purple;
+            background-color: #7a6eaa;
             border-radius: 10px;
             width: 168px;
             height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
         }
         img {
             max-width: 160px;
