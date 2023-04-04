@@ -13,6 +13,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        border-bottom: 1px solid rgb(128, 128, 128, 0.5);
         :first-child {
             margin-bottom: 15px;
             color: #280D5f;
@@ -23,17 +24,148 @@
             font-size: 1rem;
             color: #7a6eaa;
             font-weight: 500;
+            padding: 10px 0px;
         }
         :nth-child(3) {
+            // padding-top: 20px;
+            width: 100%;
             display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2px;
             div {
                 margin-bottom: 0px;
-                img, p {
-                    max-height: 24px;
-                    max-width: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 24px;
+                max-height: 24px;
+                img {
+                    max-height: inherit;
+                    max-width: inherit;
                     margin-bottom: 0px;
                 }
             }
+        }
+    }
+    .Lower-Card-Container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        .upper_input_wrapper{
+            display: flex;
+            align-items: center;
+            p {
+                font-size: medium;
+                font-weight: bold;
+                color: #280D5f;
+            }
+            #bnb_golden, #purple_input_wrapper {
+               max-height: 24px;
+               max-width: 24px; 
+            }
+            
+        }
+        #upper_input_text_wrapper{
+            min-width: 294px;
+            min-height: 78px;
+            input {
+                display: flex;
+                justify-content: center;
+                min-width: 294px;
+                min-height: 78px;
+                background-color: rgb(128, 128, 128, 0.5);
+                border-radius: 10px;
+                border: none;
+                resize: none;
+                &:focus {
+                    border: 1px solid purple;
+                }
+            }
+            
+        }
+        #arrow_down_wrapper {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #arrow_down {
+                border: none;
+                border-radius: 100%;
+                min-width: 32px;
+                min-height: 32px;
+                box-shadow: 1px 1px rgb(128, 128, 128, 0.4);
+                img {
+                    min-width: 20px;
+                    min-height: 20px;
+                }
+            }
+        }
+        #lower_input_wrapper {
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 24px;
+                max-height: 24px;
+            }
+            p {
+                font-size: medium;
+                font-weight: bold;
+                color: #280D5f;
+            }
+            
+        }
+        #lower_input_text {
+            display: flex;
+            justify-content: center;
+            min-width: 294px;
+            min-height: 78px;
+            background-color: rgb(128, 128, 128, 0.5);
+            border-radius: 10px;
+            border: none;
+            resize: none;
+            &:focus {
+                border: 1px solid purple;
+            }
+        }
+        #low_risk_wrapper {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 8px;
+            button {
+                padding: 0px 8px;
+              max-height: 28px;
+              max-width: 92px;
+              font-size: 14px;
+            }
+            img {
+                max-width: 14px;
+                max-height: 14px;
+            }
+        }
+        .slippage_tolerance_wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 8px;
+            color: #7645d9;
+            font-weight: bolder;
+            font-size: 12px;
+            #p_percent {
+                flex: auto;
+                display: flex;
+                justify-content: end;
+                color:  #1fc7d4;
+            }
+            img {
+                max-height: 10px;
+                max-width: 10px;
+            }
+        }
+        .connect_wallet {
+            min-width: 100%;
+            padding: 8px 0px;
         }
     }
 }
