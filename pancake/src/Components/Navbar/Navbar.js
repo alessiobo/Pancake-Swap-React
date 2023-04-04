@@ -1,7 +1,10 @@
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../UI/Buttons/Button";
 import "./navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <div class="navbar">
       <div class="navbar-container-logo-menu">
@@ -42,9 +45,11 @@ function Navbar() {
             </div>
           </div>
           <div class="navbar-dropdowns">
-            <button class="navbar-btn-NFT">NFT</button>
+            <button class="navbar-btn-NFT" onClick={() => navigate("/nfts")}>
+              NFT
+            </button>
             <div class="navbar-dropdown-content">
-              <a href="overview">Overview</a>
+              <Link to={"/nfts"}>Overview</Link>
               <a href="collections">Collections</a>
               <a href="activity">Activity</a>
             </div>
