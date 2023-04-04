@@ -1,0 +1,37 @@
+// sass --watch Image_Text_Wrapper.scss Image_Text_Wrapper.css
+
+.Image_Text_Wrapper {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    // height: 358px;   
+    width: 100%;
+    padding-top: 16px;
+    position: relative;    
+    z-index: 0;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Bridge_assets {
+            margin: 20px 0px;
+            color: #1FC7D4;
+            font-weight: bolder;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .need_help {
+            background-color: purple;
+            border-radius: 10px;
+            width: 168px;
+            height: 42px;
+        }
+        img {
+            max-width: 160px;
+            max-height: 180px;
+        }
+
+    }
+}
+

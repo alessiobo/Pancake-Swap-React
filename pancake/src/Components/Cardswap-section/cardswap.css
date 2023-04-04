@@ -1,0 +1,28 @@
+.card_swap {
+  height: 720px;
+  width: 390px;
+  background: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  padding: 16px;
+}
+.element_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_swap .card_element_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card_swap .card_element_wrapper .card {
+  height: 600px;
+  width: 300px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+/*# sourceMappingURL=cardswap.css.map */
