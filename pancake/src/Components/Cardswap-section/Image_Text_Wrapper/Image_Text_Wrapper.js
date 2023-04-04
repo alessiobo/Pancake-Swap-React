@@ -9,7 +9,7 @@ function Image_text_Wrapper() {
             </div>
             <div>
             <a className="need_help btn" href="google">Need Help?</a>
-            <img src={tail_purple}></img>
+            <img src={tail_purple} alt="tail_purple"></img>
             <img src={help_img} alt="help.png"></img>
             </div>
         </div>
