@@ -4,6 +4,7 @@ import Button from "../UI/Buttons/Button";
 import TabContainer from "./TabContainer";
 import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
 import { useContext } from "react";
+import { Link } from 'react-router-dom';
 
 // images
 import svg41 from "./icons/svgexport-41.svg";
@@ -38,10 +39,10 @@ function Section4() {
           </p>
           <div className="btn-wrapper2">
             <Button type={"btn"}>Explore</Button>
-            <a href="#" className="link">
+            <Link to={""} className="link">
               Learn
               <img src={svg41} className="arrow" alt="icon" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="images-wrapper2">

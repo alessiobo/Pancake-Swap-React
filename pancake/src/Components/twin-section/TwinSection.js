@@ -4,6 +4,7 @@ import Button from "../UI/Buttons/Button";
 import Section4 from "./Section4";
 import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 // images
 import svg40 from "./icons/svgexport-40.svg";
@@ -28,10 +29,10 @@ function TwinSection() {
 
         <div className="btn-wrapper">
           <Button type={"btn"}>Trade Now</Button>
-          <a href="#" className="link">
+          <Link to={""} className="link">
             Learn
             <img src={svg40} className="arrow" alt="icon" />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="images-wrapper">
