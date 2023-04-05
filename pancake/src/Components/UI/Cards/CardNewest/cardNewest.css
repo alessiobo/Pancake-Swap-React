@@ -8,6 +8,16 @@
   background: #fff;
 }
 
+<<<<<<< HEAD
+=======
+.cardNewest-padding-dark {
+  background: #383241;
+}
+.cardNewest-padding-dark .cardNewest-container-dark {
+  background: #27262c;
+}
+
+>>>>>>> develope
 .cardNewest-padding,
 .cardNewest-container {
   border-radius: 8px;

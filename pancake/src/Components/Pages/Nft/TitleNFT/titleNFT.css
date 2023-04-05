@@ -3,6 +3,13 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.titleNFT-container-dark {
+  background: linear-gradient(139.73deg, #313d5c, #3d2a54);
+}
+
+>>>>>>> develope
 .titleNFT-content {
   padding: 40px 40px;
   display: flex;
@@ -26,11 +33,21 @@
     font-size: 48px;
   }
 }
+<<<<<<< HEAD
 .titleNFT-content p {
+=======
+.titleNFT-content .titleNFT-subtitle {
+>>>>>>> develope
   font-size: 24px;
   font-weight: 600;
   line-height: 1.1;
   color: #280d5f;
 }
+<<<<<<< HEAD
+=======
+.titleNFT-content .titleNFT-subtitle-dark {
+  color: #fff;
+}
+>>>>>>> develope
 
 /*# sourceMappingURL=titleNFT.css.map */
