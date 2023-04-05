@@ -1,0 +1,40 @@
+.cardNewest-padding {
+  padding: 1px 1px 3px;
+  background: #e7e3eb;
+  cursor: pointer;
+}
+.cardNewest-padding .cardNewest-container {
+  padding: 8px;
+  background: #fff;
+}
+
+.cardNewest-padding,
+.cardNewest-container {
+  border-radius: 8px;
+  max-width: 280px;
+}
+
+.cardNewest-description {
+  margin-top: 8px;
+}
+.cardNewest-description h6,
+.cardNewest-description hr {
+  margin: 10px 0;
+  color: #7a6eaa;
+}
+.cardNewest-description h3 {
+  color: #280d5f;
+}
+
+.cardNewest-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardNewest-price > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/*# sourceMappingURL=cardNewest.css.map */

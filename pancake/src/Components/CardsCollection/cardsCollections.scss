@@ -3,24 +3,19 @@
     @content;
   }
 }
-
 @mixin dm-1000px {
   @media (min-width: 1000px) {
     @content;
   }
 }
 
-.nft-container {
-  background-color: #faf9fa;
-}
-
-.newestCollections-container {
+.cardsCollection-container {
   padding: 16px 24px;
 
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 20px;
+  gap: 16px;
 
   @include sm-715px() {
     grid-template-columns: 1fr 1fr;
