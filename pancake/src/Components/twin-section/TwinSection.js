@@ -2,6 +2,8 @@ import React from "react";
 import "./twin-section.css";
 import Button from "../UI/Buttons/Button";
 import Section4 from "./Section4";
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
+import { useContext } from "react";
 
 // images
 import svg40 from "./icons/svgexport-40.svg";
@@ -10,11 +12,12 @@ import BTC from "./imgs/BTC@2x.png";
 import CAKE from "./imgs/CAKE@2x.png";
 
 function TwinSection() {
+  const darkMode = useContext(contextDarkMode);
   return (
     <div className="twin-section">
-    <div className="section3-wrapper">
+    <div className={`section3-wrapper ${darkMode ? "section3-wrapper-dark" : ""}`}>
       <div className="text-box">
-        <h2 className="twin-section-title">
+        <h2 className={`twin-section-title ${darkMode ? "twin-section-title-dark" : ""}`}>
           <span className="secondary">Trade</span> anything. No <br />
           registration, no hassle.
         </h2>
