@@ -1,0 +1,19 @@
+.cardsCollection-container {
+  padding: 16px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 16px;
+}
+@media (min-width: 715px) {
+  .cardsCollection-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .cardsCollection-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=cardsCollection.css.map */

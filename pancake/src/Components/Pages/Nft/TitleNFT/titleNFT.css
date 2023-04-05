@@ -1,0 +1,26 @@
+.titleNFT-container {
+  background: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  width: 100%;
+}
+
+.titleNFT-content {
+  padding: 40px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleNFT-content h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #7645d9;
+  margin-bottom: 24px;
+}
+.titleNFT-content p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #280d5f;
+}
+
+/*# sourceMappingURL=titleNFT.css.map */

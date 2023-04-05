@@ -1,29 +1,19 @@
 import "./nft.css";
 
-import CardCollection from "../../UI/Cards/CardCollection/CardCollection";
-import Button from "../../UI/Buttons/Button";
-import ContainerCollections from "../../UI/Containers/ContainerCollections";
+import CardsCollection from "../../CardsCollection/CardsCollection";
+import TitleNFT from "./TitleNFT/TitleNFT";
 
 function Nft() {
   return (
-    <section>
+    <section className="nft-container">
       {/* Navbar */}
       {/* Title */}
-      <div>
-        <ContainerCollections
-          title={"Newest Collections"}
-          btnTitle={"View All"}
-        >
-          <div className="nft-container">
-            <CardCollection />
-            <CardCollection />
-            <CardCollection />
-            <CardCollection />
-            <CardCollection />
-            <CardCollection />
-          </div>
-        </ContainerCollections>
-      </div>
+      <TitleNFT
+        title={"NFT Marketplace"}
+        subTitle={"Buy and Sell NFTs on BNB Smart Chain"}
+      />
+      <CardsCollection title={"Newest Collections"} />
+      <CardsCollection title={"Hot Collections"} />
     </section>
   );
 }
