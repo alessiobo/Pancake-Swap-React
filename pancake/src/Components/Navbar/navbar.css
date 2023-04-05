@@ -1,38 +1,31 @@
-.navbar {
+.navbar, .navbar-black {
   height: 56px;
-  background-color: white;
   padding-left: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid #e7e3eb;
   justify-content: space-between;
 }
-
-.navbar-container-logo-menu {
+.navbar .navbar-container-logo-menu, .navbar-black .navbar-container-logo-menu {
   display: flex;
   flex-direction: row;
 }
-
-.navbar-img-logo {
+.navbar .navbar-img-logo, .navbar-black .navbar-img-logo {
   height: 56px;
   width: 160px;
 }
-
-.navbar-logo-home {
+.navbar .navbar-logo-home, .navbar-black .navbar-logo-home {
   block-size: fit-content;
   width: fit-content;
 }
-
-.navbar-menus {
+.navbar .navbar-menus, .navbar-black .navbar-menus {
   width: 330px;
   height: 56px;
   display: flex;
   align-items: center;
   padding: 0px 16px;
 }
-
-.navbar-btn-trade {
+.navbar .navbar-btn-trade, .navbar-black .navbar-btn-trade {
   color: #7a6eaa;
   width: 71.5px;
   height: 48px;
@@ -41,28 +34,23 @@
   border-radius: 8px;
   background-color: white;
 }
-
-.navbar-dropdown-content a {
+.navbar .navbar-dropdown-content a, .navbar-black .navbar-dropdown-content a {
   color: #7a6eaa;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.navbar-dropdown-content a:hover {
+.navbar .navbar-dropdown-content a:hover, .navbar-black .navbar-dropdown-content a:hover {
   background-color: #ddd;
 }
-
-.navbar-dropdowns:hover .navbar-dropdown-content {
+.navbar .navbar-dropdowns:hover .navbar-dropdown-content, .navbar-black .navbar-dropdowns:hover .navbar-dropdown-content {
   display: block;
   border-radius: 8px;
 }
-
-.navbar-dropdowns:hover .navbar-btn-trade {
+.navbar .navbar-dropdowns:hover .navbar-btn-trade, .navbar-black .navbar-dropdowns:hover .navbar-btn-trade {
   background-color: rgb(241, 232, 232);
 }
-
-.navbar-btn-earn {
+.navbar .navbar-btn-earn, .navbar-black .navbar-btn-earn {
   color: #7a6eaa;
   width: 64.22px;
   height: 48px;
@@ -71,13 +59,11 @@
   border-radius: 8px;
   background-color: white;
 }
-
-.navbar-dropdowns {
+.navbar .navbar-dropdowns, .navbar-black .navbar-dropdowns {
   position: relative;
   display: inline-block;
 }
-
-.navbar-dropdown-content {
+.navbar .navbar-dropdown-content, .navbar-black .navbar-dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -86,28 +72,23 @@
   width: 280px;
   height: fit-content;
 }
-
-.navbar-dropdown-content a {
+.navbar .navbar-dropdown-content a, .navbar-black .navbar-dropdown-content a {
   color: #7a6eaa;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.navbar-dropdown-content a:hover {
+.navbar .navbar-dropdown-content a:hover, .navbar-black .navbar-dropdown-content a:hover {
   background-color: rgb(241, 232, 232);
   border-radius: 8px;
 }
-
-.navbar-dropdowns:hover .navbar-dropdown-content {
+.navbar .navbar-dropdowns:hover .navbar-dropdown-content, .navbar-black .navbar-dropdowns:hover .navbar-dropdown-content {
   display: block;
 }
-
-.navbar-dropdowns:hover .navbar-btn-earn {
+.navbar .navbar-dropdowns:hover .navbar-btn-earn, .navbar-black .navbar-dropdowns:hover .navbar-btn-earn {
   background-color: rgb(241, 232, 232);
 }
-
-.navbar-btn-win {
+.navbar .navbar-btn-win, .navbar-black .navbar-btn-win {
   color: #7a6eaa;
   width: 59px;
   height: 48px;
@@ -116,12 +97,10 @@
   border-radius: 8px;
   background-color: white;
 }
-
-.navbar-dropdowns:hover .navbar-btn-win {
+.navbar .navbar-dropdowns:hover .navbar-btn-win, .navbar-black .navbar-dropdowns:hover .navbar-btn-win {
   background-color: rgb(241, 232, 232);
 }
-
-.navbar-btn-NFT {
+.navbar .navbar-btn-NFT, .navbar-black .navbar-btn-NFT {
   color: #7a6eaa;
   width: 60.15px;
   height: 48px;
@@ -130,12 +109,10 @@
   border-radius: 8px;
   background-color: white;
 }
-
-.navbar-dropdowns:hover .navbar-btn-NFT {
+.navbar .navbar-dropdowns:hover .navbar-btn-NFT, .navbar-black .navbar-dropdowns:hover .navbar-btn-NFT {
   background-color: rgb(241, 232, 232);
 }
-
-.navbar-btn-3-points-menu {
+.navbar .navbar-btn-3-points-menu, .navbar-black .navbar-btn-3-points-menu {
   color: #7a6eaa;
   width: 58px;
   height: 48px;
@@ -144,48 +121,40 @@
   border-radius: 8px;
   background-color: white;
 }
-
-.navbar-dropdowns:hover .navbar-btn-3-points-menu {
+.navbar .navbar-dropdowns:hover .navbar-btn-3-points-menu, .navbar-black .navbar-dropdowns:hover .navbar-btn-3-points-menu {
   background-color: rgb(241, 232, 232);
 }
-
-.navbar-three-points-menu {
+.navbar .navbar-three-points-menu, .navbar-black .navbar-three-points-menu {
   width: 20px;
   height: 20px;
 }
-
-.navbar-img-bunny-logo {
+.navbar .navbar-img-bunny-logo, .navbar-black .navbar-img-bunny-logo {
   height: 24px;
   text-decoration: none;
 }
-
-.navbar-img-bunny-logo:hover {
+.navbar .navbar-img-bunny-logo:hover, .navbar-black .navbar-img-bunny-logo:hover {
   transform: scale(1.2);
   transition: 200ms;
 }
-
-.navbar-icon-bunny-navbar-price {
+.navbar .navbar-icon-bunny-navbar-price, .navbar-black .navbar-icon-bunny-navbar-price {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
-
-.navbar-price {
+.navbar .navbar-price, .navbar-black .navbar-price {
   padding-left: 5px;
   padding-right: 5px;
   font-weight: 900;
   color: #7a6eaa !important;
 }
-
-.navbar-container-details-from-navbar {
+.navbar .navbar-container-details-from-navbar, .navbar-black .navbar-container-details-from-navbar {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
-
-.navbar-btn-change-language {
+.navbar .navbar-btn-change-language, .navbar-black .navbar-btn-change-language {
   width: 48px;
   height: 20px;
   border: none;
@@ -196,17 +165,14 @@
   padding: 0px 8px;
   justify-content: center;
 }
-
-.navbar-img-lng {
+.navbar .navbar-img-lng, .navbar-black .navbar-img-lng {
   width: 30px;
 }
-
-.navbar-language:hover .navbar-btn-change-language {
+.navbar .navbar-language:hover .navbar-btn-change-language, .navbar-black .navbar-language:hover .navbar-btn-change-language {
   opacity: 0.5;
   transition: 200ms;
 }
-
-.navbar-btn-option {
+.navbar .navbar-btn-option, .navbar-black .navbar-btn-option {
   width: 48px;
   height: 20px;
   border: none;
@@ -217,24 +183,20 @@
   padding: 0px;
   justify-content: center;
 }
-
-.navbar-img-btn-option {
+.navbar .navbar-img-btn-option, .navbar-black .navbar-img-btn-option {
   width: 25px;
   rotate: 90deg;
 }
-
-.navbar-option:hover .navbar-img-btn-option {
+.navbar .navbar-option:hover .navbar-img-btn-option, .navbar-black .navbar-option:hover .navbar-img-btn-option {
   opacity: 0.5;
   transition: 200ms;
 }
-
-.navbar-container-details-from-navbar {
+.navbar .navbar-container-details-from-navbar, .navbar-black .navbar-container-details-from-navbar {
   height: 56px;
   display: flex;
   align-items: center;
 }
-
-.navbar-change-crypto {
+.navbar .navbar-change-crypto, .navbar-black .navbar-change-crypto {
   border: none;
   background-color: #eff4f5;
   display: flex;
@@ -245,40 +207,188 @@
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   gap: 5px;
 }
-
-.navbar-img-change-crypto {
+.navbar .navbar-img-change-crypto, .navbar-black .navbar-img-change-crypto {
   width: 30px;
   height: 30px;
 }
-
-.navbar-img-down-arrow {
+.navbar .navbar-img-down-arrow, .navbar-black .navbar-img-down-arrow {
   width: 20px;
   height: 15px;
 }
-
-.navbar-dropdown-crypto:hover .navbar-dropdown-content {
+.navbar .navbar-dropdown-crypto:hover .navbar-dropdown-content, .navbar-black .navbar-dropdown-crypto:hover .navbar-dropdown-content {
   display: block;
   border-radius: 8px;
 }
-
-.navbar-dropdown-crypto:hover .navbar-change-crypto {
+.navbar .navbar-dropdown-crypto:hover .navbar-change-crypto, .navbar-black .navbar-dropdown-crypto:hover .navbar-change-crypto {
   background-color: rgb(241, 232, 232);
 }
-
-.navbar-select-network-text {
+.navbar .navbar-select-network-text, .navbar-black .navbar-select-network-text {
   color: #7a6eaa;
   padding: 15px;
   font-size: 16px;
 }
-
-.navbar-img {
+.navbar .navbar-img, .navbar-black .navbar-img {
   width: 25px;
   height: 20px;
   padding-right: 5px;
 }
-
-.navbar-btn-connect-wallet {
+.navbar .navbar-btn-connect-wallet, .navbar-black .navbar-btn-connect-wallet {
   padding: 0px 15px 0px 15px;
+}
+
+.navbar {
+  background-color: white;
+  border: 1px solid #e7e3eb;
+}
+.navbar .navbar-btn-trade {
+  color: #7a6eaa;
+  background-color: white;
+}
+.navbar .navbar-dropdown-content a {
+  color: #7a6eaa;
+}
+.navbar .navbar-dropdown-content a:hover {
+  background-color: #ddd;
+}
+.navbar .navbar-dropdowns:hover .navbar-btn-trade {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-btn-earn {
+  color: #7a6eaa;
+  background-color: white;
+}
+.navbar .navbar-dropdown-content {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-dropdown-content a {
+  color: #7a6eaa;
+}
+.navbar .navbar-dropdown-content a:hover {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-dropdowns:hover .navbar-btn-earn {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-btn-win {
+  color: #7a6eaa;
+  background-color: white;
+}
+.navbar .navbar-dropdowns:hover .navbar-btn-win {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-btn-NFT {
+  color: #7a6eaa;
+  background-color: white;
+}
+.navbar .navbar-dropdowns:hover .navbar-btn-NFT {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-btn-3-points-menu {
+  color: #7a6eaa;
+  background-color: white;
+}
+.navbar .navbar-dropdowns:hover .navbar-btn-3-points-menu {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-price {
+  color: #7a6eaa !important;
+}
+.navbar .navbar-btn-change-language {
+  background-color: white;
+}
+.navbar .navbar-btn-option {
+  background-color: white;
+}
+.navbar .navbar-change-crypto {
+  background-color: #eff4f5;
+  color: #280d5f;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-dropdown-crypto:hover .navbar-change-crypto {
+  background-color: rgb(241, 232, 232);
+}
+.navbar .navbar-select-network-text {
+  color: #7a6eaa;
+}
+
+.navbar-black {
+  background-color: #27262c;
+  border: 1px solid black;
+}
+.navbar-black .navbar-btn-trade {
+  color: #b8add2;
+  background-color: #27262c;
+}
+.navbar-black .navbar-dropdown-content a {
+  color: #b8add2;
+}
+.navbar-black .navbar-dropdown-content a:hover {
+  background-color: #353547;
+}
+.navbar-black .navbar-dropdowns:hover .navbar-btn-trade {
+  background-color: #353547;
+}
+.navbar-black .navbar-btn-earn {
+  color: #b8add2;
+  background-color: #27262c;
+}
+.navbar-black .navbar-dropdown-content {
+  background-color: #27262c;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar-black .navbar-dropdown-content a {
+  color: #b8add2;
+}
+.navbar-black .navbar-dropdown-content a:hover {
+  background-color: #353547;
+}
+.navbar-black .navbar-dropdowns:hover .navbar-btn-earn {
+  background-color: #353547;
+}
+.navbar-black .navbar-btn-win {
+  color: #b8add2;
+  background-color: #27262c;
+}
+.navbar-black .navbar-dropdowns:hover .navbar-btn-win {
+  background-color: #353547;
+}
+.navbar-black .navbar-btn-NFT {
+  color: #b8add2;
+  background-color: #27262c;
+}
+.navbar-black .navbar-dropdowns:hover .navbar-btn-NFT {
+  background-color: #353547;
+}
+.navbar-black .navbar-btn-3-points-menu {
+  color: #b8add2;
+  background-color: #27262c;
+}
+.navbar-black .navbar-dropdowns:hover .navbar-btn-3-points-menu {
+  background-color: #353547;
+}
+.navbar-black .navbar-price {
+  color: #b8add2 !important;
+}
+.navbar-black .navbar-btn-change-language {
+  background-color: #27262c;
+}
+.navbar-black .navbar-btn-option {
+  background-color: #27262c;
+}
+.navbar-black .navbar-change-crypto {
+  background-color: #27262c;
+  color: #b8add2;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar-black .navbar-dropdown-crypto:hover .navbar-change-crypto {
+  background-color: #353547;
+}
+.navbar-black .navbar-select-network-text {
+  color: #b8add2;
+}
+.navbar-black .btn-small {
+  color: black;
 }
 
 @media screen and (max-width: 970px) {
@@ -290,13 +400,11 @@
     width: 35px;
   }
 }
-
 @media screen and (max-width: 850px) {
   .navbar-menus {
     display: none;
   }
 }
-
 @media screen and (max-width: 540px) {
   .navbar-change-crypto {
     display: none;
@@ -306,159 +414,4 @@
   }
 }
 
-.navbar-dark {
-  background-color: #27262c;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 15px;
-  border: 1px solid black;
-}
-
-.navbar-btn-trade-dark {
-  background-color: transparent;
-  color: #7a6eaa;
-  width: 71.5px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-}
-
-.navbar-btn-earn-dark {
-  background-color: transparent;
-  color: #7a6eaa;
-  width: 64.22px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-}
-
-.navbar-btn-win-dark {
-  background-color: transparent;
-  color: #7a6eaa;
-  width: 59px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-}
-
-.navbar-btn-NFT-dark {
-  background-color: transparent;
-  color: #7a6eaa;
-  width: 60.15px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-}
-
-.navbar-btn-3-points-menu-dark {
-  background-color: transparent;
-  width: 58px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-}
-
-.navbar-dropdown-content-dark a {
-  color: #7a6eaa;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.navbar-dropdowns-dark:hover .navbar-dropdown-content-dark {
-  display: block;
-  border-radius: 8px;
-}
-
-.navbar-dropdowns-dark:hover .navbar-btn-trade-dark {
-  background-color: #3c3742;
-  display: block;
-}
-
-.navbar-dropdown-content-dark {
-  display: none;
-  position: absolute;
-  background-color: #27262c;
-  z-index: 2;
-  width: 280px;
-  height: fit-content;
-}
-
-.navbar-dropdown-content-dark a:hover {
-  background-color: #3c3742;
-  border-radius: 8px;
-}
-
-.navbar-dropdowns-dark:hover .navbar-btn-earn-dark {
-  background-color: #3c3742;
-}
-
-.navbar-dropdowns-dark:hover .navbar-btn-win-dark {
-  background-color: #3c3742;
-}
-
-.navbar-dropdowns-dark:hover .navbar-btn-NFT-dark {
-  background-color: #3c3742;
-}
-
-.navbar-dropdowns-dark:hover .navbar-btn-3-points-menu-dark {
-  background-color: #3c3742;
-}
-
-.navbar-btn-change-language-dark {
-  background-color: #27262c;
-  border: none;
-  cursor: pointer;
-  padding: 0px 8px;
-}
-
-.navbar-language-dark:hover .navbar-btn-change-language-dark {
-  opacity: 0.5;
-  transition: 200ms;
-}
-
-.navbar-btn-option-dark {
-  background-color: #27262c;
-  border: none;
-  cursor: pointer;
-  padding-right: 10px;
-  padding-left: 5px;
-}
-
-.navbar-option-dark:hover .navbar-btn-option-dark {
-  opacity: 0.5;
-  transition: 200ms;
-}
-
-.navbar-change-crypto-dark {
-  border: none;
-  background-color: #3c3742;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  color: #280d5f;
-  border-radius: 10px;
-  color: white;
-  gap: 5px;
-}
-
-.navbar-dropdown-crypto-dark:hover .navbar-dropdown-content-dark {
-  display: block;
-  border-radius: 8px;
-}
-
-.navbar-dropdown-crypto-dark:hover .navbar-change-crypto-dark {
-  background-color: #3c3742;
-}
-
-.navbar-price-dark {
-  color: #7a6eaa !important;
-  font-weight: 900;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+/*# sourceMappingURL=navbar.css.map */

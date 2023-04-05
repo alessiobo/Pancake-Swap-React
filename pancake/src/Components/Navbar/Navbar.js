@@ -1,7 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import Button from "../UI/Buttons/Button";
 import "./navbar.css";
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
+import { useContext } from "react";
+
+
+//Immagini ed icone
 import logo_color_black from "./Icons/logo_black.svg"
+import logo_color_white from "./Icons/logo_white.svg"
 import three_dots_purple from "./Icons/three_dots_purple.svg"
 import logo_circle_green from "./Icons/logo_circle_green.svg"
 import world_purple from "./Icons/world_purple.svg"
@@ -10,17 +16,18 @@ import bnb_golden from "./Icons/bnb_golden.svg"
 import arrow_down_purple from "./Icons/arrow_down_purple.svg"
 import ethereum_icon from "./Icons/ethereum.png"
 import aptos_icon from "./Icons/aptos_icon_white.svg"
+
 function Navbar() {
   const navigate = useNavigate();
-
+  const darkMode = useContext(contextDarkMode)
   return (
-    <div class="navbar">
+    <div className={darkMode ? "navbar-black" : "navbar"}>
       <div class="navbar-container-logo-menu">
         <div class="navbar-logo-home">
           <Link to={"/"}>
             <img
               class="navbar-img-logo"
-              src={logo_color_black}
+              src={darkMode ? logo_color_white : logo_color_black}
               alt="logo"
             />
           </Link>
@@ -63,7 +70,7 @@ function Navbar() {
             </div>
           </div>
           <div class="navbar-dropdowns">
-            <button class="navbar-btn-3-points-menu">
+            <button className={darkMode ? "navbar-btn-3-points-menu" : "navbar-btn-3-points-menu-dark"}>
               <img
                 class="navbar-three-points-menu"
                 src={three_dots_purple}

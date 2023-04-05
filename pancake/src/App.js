@@ -20,7 +20,7 @@ function App() {
       {/* //todo: checkbox di prova darkMode  --da eliminare */}
       <Checkbox mode={mode} setMode={setMode} />
       <contextDarkMode.Provider value={mode}>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/swap" element={<SwapPage />} />

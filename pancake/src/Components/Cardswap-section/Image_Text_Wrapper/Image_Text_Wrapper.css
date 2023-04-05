@@ -27,6 +27,8 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  position: relative;
+  left: 1px;
 }
 .Image_Text_Wrapper div img {
   max-width: 160px;

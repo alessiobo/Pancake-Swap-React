@@ -6,7 +6,6 @@
     // height: 358px;   
     width: 100%;
     padding-top: 16px;
-   
     z-index: 0;
     div {
         display: flex;
@@ -29,6 +28,8 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
+            position: relative;
+            left: 1px;
         }
         img {
             max-width: 160px;
