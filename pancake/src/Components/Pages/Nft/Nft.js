@@ -4,10 +4,16 @@ import CardsCollection from "../../CardsCollection/CardsCollection";
 import TitleNFT from "./TitleNFT/TitleNFT";
 import CardNewest from "../../UI/Cards/CardNewest/CardNewest";
 import ContainerCollections from "../../UI/Containers/ContainerCollections";
+import { useContext } from "react";
+import { contextDarkMode } from "../../UI/DarkMode/contextDarkMode";
 
 function Nft() {
+  const darkMode = useContext(contextDarkMode);
+
   return (
-    <section className="nft-container">
+    <section
+      className={`nft-container ${darkMode ? "nft-container-dark" : ""}`}
+    >
       {/* Navbar */}
 
       <TitleNFT

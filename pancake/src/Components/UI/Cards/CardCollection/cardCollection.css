@@ -11,6 +11,13 @@
   background: #fff;
 }
 
+.cardCollection-padding-dark {
+  background: #383241;
+}
+.cardCollection-padding-dark .cardCollection-container-dark {
+  background: #27262c;
+}
+
 .cardCollection-banner {
   padding: 8px;
 }

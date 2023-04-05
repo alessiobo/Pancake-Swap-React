@@ -8,6 +8,13 @@
   background: #fff;
 }
 
+.cardNewest-padding-dark {
+  background: #383241;
+}
+.cardNewest-padding-dark .cardNewest-container-dark {
+  background: #27262c;
+}
+
 .cardNewest-padding,
 .cardNewest-container {
   border-radius: 8px;
