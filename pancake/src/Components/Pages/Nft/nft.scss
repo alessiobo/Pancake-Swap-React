@@ -2,5 +2,29 @@
   background-color: #faf9fa;
 }
 
+@mixin sm-715px {
+  @media (min-width: 715px) {
+    @content;
+  }
+}
+@mixin dm-1000px {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
 .newestCollections-container {
+  padding: 16px 24px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 20px;
+
+  @include sm-715px() {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include dm-1000px() {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

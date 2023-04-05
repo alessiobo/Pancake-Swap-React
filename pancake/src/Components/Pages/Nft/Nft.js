@@ -34,7 +34,6 @@ function Nft() {
           <CardNewest />
           <CardNewest />
           <CardNewest />
-          <CardNewest />
         </div>
       </ContainerCollections>
     </section>
