@@ -3,6 +3,7 @@
   border-radius: 8px 8px 8px 56px;
   padding: 1px 1px 3px;
   background: #e7e3eb;
+  cursor: pointer;
 }
 .cardCollection-padding .cardCollection-container {
   border-radius: 8px 8px 8px 56px;
@@ -48,6 +49,21 @@
   .cardCollection-description h4 {
     font-size: 16px;
   }
+}
+.cardCollection-description div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.cardCollection-description div p {
+  font-size: 16px;
+}
+.cardCollection-description div img {
+  position: relative;
+}
+.cardCollection-description div span {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=cardCollection.css.map */
