@@ -11,13 +11,9 @@ function Nft() {
   const darkMode = useContext(contextDarkMode);
 
   return (
-<<<<<<< HEAD
-    <section className="nft-container">
-=======
     <section
       className={`nft-container ${darkMode ? "nft-container-dark" : ""}`}
     >
->>>>>>> develope
       {/* Navbar */}
 
       <TitleNFT

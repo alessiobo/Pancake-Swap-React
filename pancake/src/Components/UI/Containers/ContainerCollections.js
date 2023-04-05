@@ -8,10 +8,6 @@ function ContainerCollections(props) {
 
   return (
     <section>
-<<<<<<< HEAD
-      <div className="containerCollection-title">
-        <h2 style={{ color: "#280d5f" }}>{props.title}</h2>
-=======
       <div className="containerCollection-container">
         <h2
           className={`containerCollection-title ${
@@ -20,7 +16,6 @@ function ContainerCollections(props) {
         >
           {props.title}
         </h2>
->>>>>>> develope
         <Button addStyle={{ height: "32px" }} type={"btn-thin"}>
           View All
         </Button>

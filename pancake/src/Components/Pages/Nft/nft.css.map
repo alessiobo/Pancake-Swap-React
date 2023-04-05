@@ -1,5 +1,10 @@
-<<<<<<< HEAD
-{"version":3,"sourceRoot":"","sources":["nft.scss"],"names":[],"mappings":"AAYA;EACE;;;AAGF;EACE;EAEA;EACA;EACA;EACA;;AArBA;EAeF;IASI;;;AAlBF;EASF;IAYI","file":"nft.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["nft.scss"],"names":[],"mappings":"AAYA;EACE;;;AAEF;EACE;;;AAGF;EACE;EAEA;EACA;EACA;EACA;;AAxBA;EAkBF;IASI;;;AArBF;EAYF;IAYI","file":"nft.css"}
->>>>>>> develope
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "nft.scss"
+  ],
+  "names": [],
+  "mappings": "AAYA;EACE;;;AAEF;EACE;;;AAGF;EACE;EAEA;EACA;EACA;EACA;;AAxBA;EAkBF;IASI;;;AArBF;EAYF;IAYI",
+  "file": "nft.css"
+}
