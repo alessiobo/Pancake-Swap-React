@@ -6,8 +6,9 @@ import { Liquidity } from "./LiquidityComponents/Liquidity"
 function LiquidityPage() {
     return (
         <div>
-           <Liquidity/>
             <Underbar/>
+           <Liquidity/>
+            
            
         </div>
     )

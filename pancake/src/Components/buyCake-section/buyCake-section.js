@@ -7,12 +7,10 @@ import topLeft1 from "./images/top-left-1.webp";
 import topLeft2 from "./images/top-left-2.webp";
 import topLeft3 from "./images/top-left-3.webp";
 import Button from "../UI/Buttons/Button";
-
-
 import bottomRight1 from "./images/bottom-right-1.webp";
 import bottomRight2 from "./images/bottom-right-2.webp";
 import bottomRight3 from "./images/bottom-right-3.webp";
-
+import { Link } from "react-router-dom";
 
 
 const BuyCake = () => {
@@ -32,9 +30,9 @@ const BuyCake = () => {
                             with it!
                         </p>
                         <div className="buyCake-link1">
-                            <a href="" className="buyCake-link"
+                            <Link to="" className="buyCake-link"
                             ><Button type={"btn"} img={"arrR"}>Buy CAKE</Button>
-                            </a>
+                            </Link>
                             <a href="" className="buyCake-link buyCake-aColor">Learn</a>
                         </div>
                     </div>
@@ -114,11 +112,11 @@ const BuyCake = () => {
               </p>
               <p className="purple-p">No registration needed.</p>
               <div className="purple-linkContainer">
-                <a
+                <Link to=""
                   className="buyCake-link buyCake-aColor"
                   href="https://www.google.it/"
                   >Learn how to start
-                </a>
+                </Link>
                 <Button type={"btn"} img={"arrR"}>
                   Connect Wallet
                 </Button>
