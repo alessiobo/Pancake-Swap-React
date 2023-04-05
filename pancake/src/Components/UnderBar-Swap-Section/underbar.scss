@@ -1,20 +1,32 @@
 //sass --watch underbar.scss underbar.css
-
+// b8add2
+#underbar-dark {
+    background-color: #1d1d22;
+    .underbar_link {
+        color: #b8add2;
+    }
+}
 #underbar {
+    background-color: white;
+    .underbar_link {
+        color: #7a6eaa;
+    }
+}
+#underbar, #underbar-dark {
     height: 42px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: end;
     max-width: 100%;
+    gap: 20px;
     div {
         display: flex;
         justify-content: center;
         align-content: center;
         margin-bottom: 10px;
-
+        
         .underbar_link {
             text-decoration: none;
-            color: #7a6eaa;
             font-size: 16px;
             font-weight: bold;
         }
@@ -33,8 +45,6 @@
         }
     }
 }
-
-
 
 .colored_bar {
     height: 4px;

@@ -1,29 +1,43 @@
+#underbar-dark {
+  background-color: #1d1d22;
+}
+#underbar-dark .underbar_link {
+  color: #b8add2;
+}
+
 #underbar {
+  background-color: white;
+}
+#underbar .underbar_link {
+  color: #7a6eaa;
+}
+
+#underbar, #underbar-dark {
   height: 42px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: end;
   max-width: 100%;
+  gap: 20px;
 }
-#underbar div {
+#underbar div, #underbar-dark div {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-bottom: 10px;
 }
-#underbar div .underbar_link {
+#underbar div .underbar_link, #underbar-dark div .underbar_link {
   text-decoration: none;
-  color: #7a6eaa;
   font-size: 16px;
   font-weight: bold;
 }
-#underbar .clicked_wrapper {
+#underbar .clicked_wrapper, #underbar-dark .clicked_wrapper {
   position: relative;
   top: 12px;
   display: flex;
   flex-direction: column;
 }
-#underbar .clicked_wrapper .underbar_link {
+#underbar .clicked_wrapper .underbar_link, #underbar-dark .clicked_wrapper .underbar_link {
   text-decoration: none;
   font-size: 16px;
   font-weight: bolder;

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import "animate.css";
 import "./orange-section.css";
 import svg30 from "./icons/svgexport-30.svg"
@@ -12,10 +12,12 @@ import bottom_left from "./imgs/bottom-left@2x.webp"
 import green from "./imgs/green@2x.webp"
 import red from "./imgs/red@2x.webp"
 import top_right from "./imgs/top-right@2x.webp"
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
 function OrangeSection() {
+    const darkMode = useContext(contextDarkMode)
     return (
         <div>
-            <section className="orange-section">
+            <section className={darkMode ? "orange-section-dark" : "orange-section"}>
                 <div className="orange-section-container">
                     <div className="section-wrapper">
                         <div className="top-text">
