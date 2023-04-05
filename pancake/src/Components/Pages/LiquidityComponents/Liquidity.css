@@ -1,14 +1,20 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  box-sizing: border-box;
+  
   background-color: aqua;
   width: 100%;
-  height: 1000px;
-  padding-top: 7vh;
-  padding-bottom: 2vh;
+  height: 100%;
+  padding-top: 5vh;
+  padding-bottom: 6vh;
+ 
+}
+.bunnyContent{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  
 }
 
 .bunnyCard {
@@ -16,7 +22,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 255px;
+  height: 200px;
   width: 100vh;
   border: solid 1px;
   border-radius: 30px;
@@ -26,36 +32,39 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238a83fc'/%3E%3Cstop offset='1' stop-color='%238a83fc' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%235e9cff'/%3E%3Cstop offset='1' stop-color='%235e9cff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236ba7f7'/%3E%3Cstop offset='1' stop-color='%236ba7f7' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239770FD'/%3E%3Cstop offset='1' stop-color='%239770FD' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238492F7'/%3E%3Cstop offset='1' stop-color='%238492F7' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236CB8EF'/%3E%3Cstop offset='1' stop-color='%236CB8EF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  
 }
 .btn {
-  height: 6vh;
+  height: 5vh;
   width: 12vh;
+  
 }
 .buttonLiquidity {
   display: flex;
-  width: 20vh;
-  gap: 3vh;
-  position: relative;
-  bottom: 33vh;
-  right: 37vh;
+  width: 18vh;
+  gap: 2vh;
 }
-.bunnyLiquidBox {
-  position: relative;
-  bottom: 24.6vh;
-  left: 30vh;
-  max-width: 100%;
-  height: auto;
+
+.bunnyLiquid{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 240px;
+
+    
+}
+.firstRowBu{
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+  height: 150px;
+ 
 }
 
 .liquidityCard {
   display: flex;
   flex-direction: column;
-  height: 480px;
+  height: 380px;
   width: 100vh;
   border: solid 1px;
   border-radius: 30px;
