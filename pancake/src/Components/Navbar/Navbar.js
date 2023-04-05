@@ -1,6 +1,6 @@
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../UI/Buttons/Button";
 import "./navbar.css";
-import { Link } from "react-router-dom";
 import logo_color_black from "./Icons/logo_black.svg"
 import three_dots_purple from "./Icons/three_dots_purple.svg"
 import logo_circle_green from "./Icons/logo_circle_green.svg"
@@ -11,11 +11,13 @@ import arrow_down_purple from "./Icons/arrow_down_purple.svg"
 import ethereum_icon from "./Icons/ethereum.png"
 import aptos_icon from "./Icons/aptos_icon_white.svg"
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <div class="navbar">
       <div class="navbar-container-logo-menu">
         <div class="navbar-logo-home">
-          <Link to="/">
+          <Link to={"/"}>
             <img
               class="navbar-img-logo"
               src={logo_color_black}
@@ -51,9 +53,11 @@ function Navbar() {
             </div>
           </div>
           <div class="navbar-dropdowns">
-            <button class="navbar-btn-NFT">NFT</button>
+            <button class="navbar-btn-NFT" onClick={() => navigate("/nfts")}>
+              NFT
+            </button>
             <div class="navbar-dropdown-content">
-              <a href="overview">Overview</a>
+              <Link to={"/nfts"}>Overview</Link>
               <a href="collections">Collections</a>
               <a href="activity">Activity</a>
             </div>

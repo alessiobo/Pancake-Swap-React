@@ -6,6 +6,8 @@ import topL2 from "./images/top-left@2x.webp";
 import topLeft1 from "./images/top-left-1.webp";
 import topLeft2 from "./images/top-left-2.webp";
 import topLeft3 from "./images/top-left-3.webp";
+import Button from "../UI/Buttons/Button";
+
 
 import bottomRight1 from "./images/bottom-right-1.webp";
 import bottomRight2 from "./images/bottom-right-2.webp";
@@ -29,9 +31,9 @@ const BuyCake = () => {
                             win it, farm it, spend it, stake it... heck, you can even <br /> vote
                             with it!
                         </p>
-                        <div className="buyCake-link">
+                        <div className="buyCake-link1">
                             <a href="" className="buyCake-link"
-                            ><button className="btn">Buy CAKE</button>
+                            ><Button type={"btn"} img={"arrR"}>Buy CAKE</Button>
                             </a>
                             <a href="" className="buyCake-link buyCake-aColor">Learn</a>
                         </div>
@@ -117,13 +119,9 @@ const BuyCake = () => {
                   href="https://www.google.it/"
                   >Learn how to start
                 </a>
-                <button
-                 
-                 className="btn buyCake-btn"
-                  type="submit"
-                >
+                <Button type={"btn"} img={"arrR"}>
                   Connect Wallet
-                </button>
+                </Button>
               </div>
             </div>
             <div className="purple-animationBoxBottom">

@@ -1,0 +1,5 @@
+.containerCollection-title {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+}
