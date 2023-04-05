@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+ 
   background-color: aqua;
   width: 100%;
   height: 100%;
@@ -13,6 +13,7 @@
 .bunnyContent{
   display: flex;
   flex-direction: column;
+  
   gap: 5vh;
   
 }
@@ -22,8 +23,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 200px;
-  width: 100vh;
+  height: 29vh;
+  width: 132vh;
   border: solid 1px;
   border-radius: 30px;
   padding: 30px;
@@ -50,6 +51,9 @@
     margin-left: auto;
     margin-right: auto ;
     width: 240px;
+    position: relative;
+    top: -23vh;
+    right: -29vh;
 
     
 }
@@ -65,7 +69,7 @@
   display: flex;
   flex-direction: column;
   height: 380px;
-  width: 100vh;
+  width: 132vh;
   border: solid 1px;
   border-radius: 30px;
   padding: 30px;
@@ -102,10 +106,14 @@
   padding: 0px;
   text-align: center;
 }
+/*@media screen and (min-width: 968px){}
+.bunnyCard
+ {
+    padding: 32px 32px 0;}*/
 
 @media screen and (max-width: 880px) {
   .bunnyCard {
-    width: fit-content;
+    width: 110vh;
   }
 
   .bunnyLiquid {
