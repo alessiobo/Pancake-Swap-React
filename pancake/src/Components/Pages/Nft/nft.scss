@@ -1,16 +1,17 @@
-.nft-container {
-  background-color: #faf9fa;
-}
-
 @mixin sm-715px {
   @media (min-width: 715px) {
     @content;
   }
 }
+
 @mixin dm-1000px {
   @media (min-width: 1000px) {
     @content;
   }
+}
+
+.nft-container {
+  background-color: #faf9fa;
 }
 
 .newestCollections-container {
