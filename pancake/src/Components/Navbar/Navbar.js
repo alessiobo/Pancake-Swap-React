@@ -1,18 +1,33 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import Button from "../UI/Buttons/Button";
 import "./navbar.css";
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
+import { useContext } from "react";
+
+
+//Immagini ed icone
+import logo_color_black from "./Icons/logo_black.svg"
+import logo_color_white from "./Icons/logo_white.svg"
+import three_dots_purple from "./Icons/three_dots_purple.svg"
+import logo_circle_green from "./Icons/logo_circle_green.svg"
+import world_purple from "./Icons/world_purple.svg"
+import gear_purple from "./Icons/gear_purple.svg"
+import bnb_golden from "./Icons/bnb_golden.svg"
+import arrow_down_purple from "./Icons/arrow_down_purple.svg"
+import ethereum_icon from "./Icons/ethereum.png"
+import aptos_icon from "./Icons/aptos_icon_white.svg"
 
 function Navbar() {
   const navigate = useNavigate();
-
+  const darkMode = useContext(contextDarkMode)
   return (
-    <div class="navbar">
+    <div className={darkMode ? "navbar-black" : "navbar"}>
       <div class="navbar-container-logo-menu">
         <div class="navbar-logo-home">
           <Link to={"/"}>
             <img
               class="navbar-img-logo"
-              src="../DesignSystem/images/Logo/color-black.svg"
+              src={darkMode ? logo_color_white : logo_color_black}
               alt="logo"
             />
           </Link>
@@ -55,10 +70,10 @@ function Navbar() {
             </div>
           </div>
           <div class="navbar-dropdowns">
-            <button class="navbar-btn-3-points-menu">
+            <button className={darkMode ? "navbar-btn-3-points-menu" : "navbar-btn-3-points-menu-dark"}>
               <img
                 class="navbar-three-points-menu"
-                src="./Components/header-navbar-images/three-dots-svgrepo-com.svg"
+                src={three_dots_purple}
                 alt="..."
               />
             </button>
@@ -78,8 +93,8 @@ function Navbar() {
           <a class="navbar-icon-bunny-navbar-price" href="">
             <img
               class="navbar-img-bunny-logo"
-              src="../DesignSystem/images/Logo/cake-token.png"
-              alt="logo"
+              src={logo_circle_green}
+              alt="logo circle green"
             />
             <span class="navbar-price">$4.011</span>
           </a>
@@ -88,8 +103,8 @@ function Navbar() {
           <button class="navbar-btn-change-language">
             <img
               class="navbar-img-lng"
-              src="../DesignSystem/images/Icons/others-icons/icons8-geografia-48 1.png"
-              alt=""
+              src={world_purple}
+              alt="world_purple"
             />
           </button>
         </div>
@@ -97,8 +112,8 @@ function Navbar() {
           <button class="navbar-btn-option">
             <img
               class="navbar-img-btn-option"
-              src="./Components/header-navbar-images/option-btn.svg"
-              alt=""
+              src={gear_purple}
+              alt="gear purple"
             />
           </button>
         </div>
@@ -106,14 +121,14 @@ function Navbar() {
           <button class="navbar-change-crypto">
             <img
               class="navbar-img-change-crypto"
-              src="../DesignSystem/images/Icons/standard-pankake-icons/one.png"
-              alt=""
+              src={bnb_golden}
+              alt="bnb_golden"
             />
             BNB Smart Chain
             <img
               class="navbar-img-down-arrow"
-              src="./Components/header-navbar-images/down-arrow-svgrepo.svg"
-              alt=""
+              src={arrow_down_purple}
+              alt="arrow"
             />
           </button>
           <div class="navbar-dropdown-content">
@@ -121,31 +136,31 @@ function Navbar() {
             <a href="">
               <img
                 class="navbar-img-change-crypto"
-                src="../DesignSystem/images/Icons/standard-pankake-icons/one.png"
-                alt=""
+                src={bnb_golden}
+                alt="bnb_golden"
               />
               BNB Smart Chain
             </a>
             <a href="">
               <img
                 class="navbar-img"
-                src="./Components/header-navbar-images/ethereum.png"
-                alt=""
+                src={ethereum_icon}
+                alt="ethereum"
               />
               Ethereum
             </a>
             <a href="">
               <img
                 class="navbar-img"
-                src="./Components/header-navbar-images/aptos-logo.png"
-                alt=""
+                src={aptos_icon}
+                alt="aptos_icon"
               />
               Aptos
             </a>
           </div>
         </div>
         <div class="navbar-btn-connect-wallet">
-          <Button type={"btn-small"}>Connect Wallet</Button>
+          <Button type="btn-small">Connect Wallet</Button>
         </div>
       </div>
     </div>
