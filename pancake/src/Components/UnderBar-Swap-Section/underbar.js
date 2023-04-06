@@ -1,27 +1,15 @@
 // import { useEffect, useState } from "react"
+import { useContext } from "react"
 import "./underbar.css"
 import { Link, useLocation } from "react-router-dom"
-// function Underbar() {
-//     const [isHidden, setisHidden] = useState(false)
-//     useEffect(() =>
-//         function HandleScroll() {
-//             if (window.scrollY > Underbar.offsetTop) {
-//                 setisHidden(true)
-//             } else {
-//                 setisHidden(false)
-//             }
-
-//             window.addEventListener("scroll", HandleScroll);
-//             return () => {
-//                 window.removeEventListener("scroll", HandleScroll)
-//             };
-//         }, []);
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode"
 
 function Underbar() {
     const location = useLocation()
+    const darkMode = useContext(contextDarkMode)
     return (
-        <div id="underbar">
-            <div className={location.pathname === "/swap" ? "clicked_wrapper" : ""}>
+        <div id={darkMode ? "underbar-dark" : "underbar"}>
+            <div className={location.pathname === "/swap" ? "clicked_wrapper" : ""} >
                 <Link to="/swap" className="underbar_link">
                     Swap
                 </Link>
