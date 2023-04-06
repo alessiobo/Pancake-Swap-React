@@ -11,13 +11,20 @@
 
   padding: 1px 1px 3px;
   background: #e7e3eb;
+
+  cursor: pointer;
+
   .cardCollection-container {
     border-radius: 8px 8px 8px 56px;
     max-height: 188px;
 
     background: #fff;
-
-    // transition: opacity 200ms ease 0s;
+  }
+}
+.cardCollection-padding-dark {
+  background: #383241;
+  .cardCollection-container-dark {
+    background: #27262c;
   }
 }
 
@@ -58,6 +65,22 @@
     margin: 0 0 8px;
     @include sm-370px() {
       font-size: 16px;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    p {
+      font-size: 16px;
+    }
+    img {
+      position: relative;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 600;
     }
   }
 }

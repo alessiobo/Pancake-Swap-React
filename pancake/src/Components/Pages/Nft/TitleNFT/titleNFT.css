@@ -1,0 +1,43 @@
+.titleNFT-container {
+  background: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  width: 100%;
+}
+
+.titleNFT-container-dark {
+  background: linear-gradient(139.73deg, #313d5c, #3d2a54);
+}
+
+.titleNFT-content {
+  padding: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .titleNFT-content {
+    padding: 40px 24px;
+  }
+}
+.titleNFT-content h2 {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #7645d9;
+  margin-bottom: 24px;
+}
+@media (max-width: 1000px) {
+  .titleNFT-content h2 {
+    font-size: 48px;
+  }
+}
+.titleNFT-content .titleNFT-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #280d5f;
+}
+.titleNFT-content .titleNFT-subtitle-dark {
+  color: #fff;
+}
+
+/*# sourceMappingURL=titleNFT.css.map */

@@ -1,5 +1,13 @@
-.containerCollection-title {
+.containerCollection-container {
   padding: 32px;
   display: flex;
   justify-content: space-between;
+}
+
+.containerCollection-title {
+  color: #280d5f;
+}
+
+.containerCollection-title-dark {
+  color: #fff;
 }

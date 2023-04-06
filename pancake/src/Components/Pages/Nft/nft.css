@@ -1,18 +1,25 @@
 .nft-container {
   background-color: #faf9fa;
+}
+
+.nft-container-dark {
+  background-color: #08060b;
+}
+
+.newestCollections-container {
   padding: 16px 24px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 @media (min-width: 715px) {
-  .nft-container {
+  .newestCollections-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1000px) {
-  .nft-container {
+  .newestCollections-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

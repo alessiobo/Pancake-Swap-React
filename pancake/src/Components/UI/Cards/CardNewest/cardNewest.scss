@@ -1,0 +1,49 @@
+.cardNewest-padding {
+  padding: 1px 1px 3px;
+  background: #e7e3eb;
+
+  cursor: pointer;
+
+  .cardNewest-container {
+    padding: 8px;
+    background: #fff;
+  }
+}
+
+.cardNewest-padding-dark {
+  background: #383241;
+  .cardNewest-container-dark {
+    background: #27262c;
+  }
+}
+
+.cardNewest-padding,
+.cardNewest-container {
+  border-radius: 8px;
+  max-width: 280px;
+}
+
+.cardNewest-description {
+  margin-top: 8px;
+
+  h6,
+  hr {
+    margin: 10px 0;
+    color: #7a6eaa;
+  }
+  h3 {
+    color: #280d5f;
+  }
+}
+
+.cardNewest-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
