@@ -1,21 +1,25 @@
+* {
+  font-family: Kanit, sans-serif;
+  color: azure;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
-  background-color: aqua;
+
+  background-color: #e9faff;
   width: 100%;
   height: 100%;
   padding-top: 5vh;
   padding-bottom: 6vh;
- 
 }
-.bunnyContent{
+
+.bunnyContent {
   display: flex;
   flex-direction: column;
-  
-  gap: 5vh;
-  
+
+  gap: 1vh;
 }
 
 .bunnyCard {
@@ -23,9 +27,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 29vh;
-  width: 132vh;
-  border: solid 1px;
+  height: 21vh;
+  width: 90vh;
   border-radius: 30px;
   padding: 30px;
   gap: 15px;
@@ -33,93 +36,157 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238a83fc'/%3E%3Cstop offset='1' stop-color='%238a83fc' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%235e9cff'/%3E%3Cstop offset='1' stop-color='%235e9cff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236ba7f7'/%3E%3Cstop offset='1' stop-color='%236ba7f7' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239770FD'/%3E%3Cstop offset='1' stop-color='%239770FD' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238492F7'/%3E%3Cstop offset='1' stop-color='%238492F7' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236CB8EF'/%3E%3Cstop offset='1' stop-color='%236CB8EF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-  
 }
+
 .btn {
   height: 5vh;
   width: 12vh;
-  
 }
+
 .buttonLiquidity {
   display: flex;
   width: 18vh;
   gap: 2vh;
 }
 
-.bunnyLiquid{
+.bunnyLiquid {
   display: block;
-    margin-left: auto;
-    margin-right: auto ;
-    width: 240px;
-    position: relative;
-    top: -23vh;
-    right: -29vh;
-
-    
+  margin-left: auto;
+  margin-right: auto;
+  width: 32.3vh;
+  position: relative;
+  top: -23vh;
+  right: -28vh;
 }
-.firstRowBu{
+
+.firstRowBu {
   display: flex;
   flex-direction: row;
   width: 100vh;
   height: 150px;
- 
+  font-size: 20px;
+}
+
+.secondRowBu {
+  font-size: 20px;
 }
 
 .liquidityCard {
   display: flex;
   flex-direction: column;
-  height: 380px;
-  width: 132vh;
+  height: 40vh;
+  width: 90vh;
   border: solid 1px;
   border-radius: 30px;
   padding: 30px;
   gap: 15px;
-  background-color: antiquewhite;
+  background-color: white;
 }
+
 .firstRowLi {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.firstRowLi h2 {
+  color: #280d5f;
+  font-size: 19px
+}
+
+.secondRowLi p {
+  color: #7a6eaf;
+  font-size: 14px;
+}
+
 .firstRowP {
   justify-self: flex-end;
-}
-.thirdRowLi {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  color: #7a6eaf;
 }
 
-.switcherLi {
-  width: 250px;
-  height: 30px;
-  border: solid 1px black;
-  justify-self: flex-end;
-  border-radius: 10px;
-}
+
+
 
 .fourthRowLi {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 80px;
   width: 100%;
-  height: 100px;
-  border-radius: 10px;
-  background-color: rgba(20, 18, 18, 0.267);
-  padding: 0px;
-  text-align: center;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  background-color:#EEEAF4;
+
+  position: relative;
+  top: 4vh;
+}
+
+.fourthRowLi p {
+  color: #7a6eaf;
+  font-size: 14px;
+}
+
+.btnBottom {
+  position: relative;
+
+  top: 6vh;
+}
+
+.btn1 {
+  background-color: #1fc7d4;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: #fff;
 }
 /*@media screen and (min-width: 968px){}
 .bunnyCard
  {
     padding: 32px 32px 0;}*/
 
+@media screen and (max-height: 900px) {
+  .bunnyLiquid {
+    width: 17vh;
+    position: relative;
+    top: -13.3vh;
+    right: -35vh;
+  }
+}
+
 @media screen and (max-width: 880px) {
   .bunnyCard {
-    width: 110vh;
+    width: 80vh;
   }
 
   .bunnyLiquid {
     width: 17vh;
     position: relative;
-    top: -3vh;
+    top: -13.3vh;
+    right: -35vh;
   }
 
   .card-content {
