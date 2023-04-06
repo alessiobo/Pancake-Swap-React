@@ -5,7 +5,12 @@ import usersIcon from "./img-icons/users.png";
 import frecceIcon from "./img-icons/frecce.png";
 import graficoIncon from "./img-icons/grafico.png";
 
+import { useContext } from "react";
+import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
+
 export default function CardSection() {
+  const darkMode = useContext(contextDarkMode);
+
   const cardData = [
     {
       logo: usersIcon,
@@ -39,39 +44,46 @@ export default function CardSection() {
   };
 
   return (
-    <div className="card-section">
-      <img src={bunnyImage} alt="bunny" className="bunny-viola" />
-      <h2 className="card-title-h2">
-        Used by millions.
+    <section>
+      <div className={`card-section ${darkMode ? "card-section-dark" : ""}`}>
+        <img src={bunnyImage} alt="bunny" className="bunny-viola" />
+        <h2 className={`card-title-h2 ${darkMode ? "title-h2-dark" : ""}`}>
+          Used by millions.
+          <br />
+          Trusted with billions.
+        </h2>
+        <p className="card-mini-p">
+          PancakeSwap has the most users of any decentralized platform, ever.
+          <br />
+          And those users are now entrusting the platform with over $3.3 billion
+          in funds.
+        </p>
         <br />
-        Trusted with billions.
-      </h2>
-      <p className="card-mini-p">
-        PancakeSwap has the most users of any decentralized platform, ever.
-        <br />
-        And those users are now entrusting the platform with over $3.3 billion
-        in funds.
-      </p>
-      <br />
-      <b className="bold-text">Will you join them?</b>
-      <div className="card-container">
-        {cardData.map((data, index) => (
-          <div className="card-all" key={index}>
-            <img src={data.logo} alt="logo" className="card-logo" />
-            <h2 className="first-h2">{data.firstTitle}</h2>
-            <br />
-            <h2
-              className="card-section-h2"
-              style={{ color: getColor(data.secondTitle) }}
+        <b className="bold-text">Will you join them?</b>
+        <div className="card-container">
+          {cardData.map((data, index) => (
+            <div
+              className={`card-all ${darkMode ? "card-bg-dark" : ""}`}
+              key={index}
             >
-              {data.secondTitle}
-            </h2>
+              <img src={data.logo} alt="logo" className="card-logo" />
+              <h2 className={`first-h2 ${darkMode ? "first-h2-dark" : ""}`}>
+                {data.firstTitle}
+              </h2>
+              <br />
+              <h2
+                className="card-section-h2"
+                style={{ color: getColor(data.secondTitle) }}
+              >
+                {data.secondTitle}
+              </h2>
 
-            <br />
-            <span className="span-cards">{data.span}</span>
-          </div>
-        ))}
+              <br />
+              <span className="span-cards">{data.span}</span>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
