@@ -11,9 +11,8 @@ import rabbit_blue_icon from "./icons/rabbit_blue_icon.svg"
 import copy_paste_icon from "./icons/copy_paste_icon.svg"
 import pen_green from "./icons/pen_green.svg"
 import question_mark_white from "./icons/question_mark_white.svg"
-import { useContext } from "react"
+
 function Card() {
-    
     return (
         <div className="card">
             <div className="Upper-Card-Container">

@@ -1,4 +1,5 @@
-.card {
+.element_wrapper .card,
+.element_wrapper_dark .card {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
@@ -7,7 +8,8 @@
   height: 588px;
   width: 326px;
 }
-.card .Upper-Card-Container {
+.element_wrapper .card .Upper-Card-Container,
+.element_wrapper_dark .card .Upper-Card-Container {
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -15,26 +17,30 @@
   align-items: flex-start;
   border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
-.card .Upper-Card-Container :first-child {
+.element_wrapper .card .Upper-Card-Container :first-child,
+.element_wrapper_dark .card .Upper-Card-Container :first-child {
   margin-bottom: 15px;
   color: #280D5f;
   font-size: 20px;
   font-weight: bold;
 }
-.card .Upper-Card-Container :nth-child(2) {
+.element_wrapper .card .Upper-Card-Container :nth-child(2),
+.element_wrapper_dark .card .Upper-Card-Container :nth-child(2) {
   font-size: 1rem;
   color: #7a6eaa;
   font-weight: 500;
   padding: 10px 0px;
 }
-.card .Upper-Card-Container :nth-child(3) {
+.element_wrapper .card .Upper-Card-Container :nth-child(3),
+.element_wrapper_dark .card .Upper-Card-Container :nth-child(3) {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 2px;
 }
-.card .Upper-Card-Container :nth-child(3) div {
+.element_wrapper .card .Upper-Card-Container :nth-child(3) div,
+.element_wrapper_dark .card .Upper-Card-Container :nth-child(3) div {
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
@@ -42,34 +48,43 @@
   max-width: 24px;
   max-height: 24px;
 }
-.card .Upper-Card-Container :nth-child(3) div img {
+.element_wrapper .card .Upper-Card-Container :nth-child(3) div img,
+.element_wrapper_dark .card .Upper-Card-Container :nth-child(3) div img {
   max-height: inherit;
   max-width: inherit;
   margin-bottom: 0px;
 }
-.card .Lower-Card-Container {
+.element_wrapper .card .Lower-Card-Container,
+.element_wrapper_dark .card .Lower-Card-Container {
   padding: 16px;
   display: flex;
   flex-direction: column;
 }
-.card .Lower-Card-Container .upper_input_wrapper {
+.element_wrapper .card .Lower-Card-Container .upper_input_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container .upper_input_wrapper {
   display: flex;
   align-items: center;
 }
-.card .Lower-Card-Container .upper_input_wrapper p {
+.element_wrapper .card .Lower-Card-Container .upper_input_wrapper p,
+.element_wrapper_dark .card .Lower-Card-Container .upper_input_wrapper p {
   font-size: medium;
   font-weight: bold;
   color: #280D5f;
 }
-.card .Lower-Card-Container .upper_input_wrapper #bnb_golden, .card .Lower-Card-Container .upper_input_wrapper #purple_input_wrapper {
+.element_wrapper .card .Lower-Card-Container .upper_input_wrapper #bnb_golden,
+.element_wrapper .card .Lower-Card-Container .upper_input_wrapper #purple_input_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container .upper_input_wrapper #bnb_golden,
+.element_wrapper_dark .card .Lower-Card-Container .upper_input_wrapper #purple_input_wrapper {
   max-height: 24px;
   max-width: 24px;
 }
-.card .Lower-Card-Container #upper_input_text_wrapper {
+.element_wrapper .card .Lower-Card-Container #upper_input_text_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container #upper_input_text_wrapper {
   min-width: 294px;
   min-height: 78px;
 }
-.card .Lower-Card-Container #upper_input_text_wrapper input {
+.element_wrapper .card .Lower-Card-Container #upper_input_text_wrapper input,
+.element_wrapper_dark .card .Lower-Card-Container #upper_input_text_wrapper input {
   display: flex;
   justify-content: center;
   min-width: 294px;
@@ -79,40 +94,48 @@
   border: none;
   resize: none;
 }
-.card .Lower-Card-Container #upper_input_text_wrapper input:focus {
+.element_wrapper .card .Lower-Card-Container #upper_input_text_wrapper input:focus,
+.element_wrapper_dark .card .Lower-Card-Container #upper_input_text_wrapper input:focus {
   border: 1px solid purple;
 }
-.card .Lower-Card-Container #arrow_down_wrapper {
+.element_wrapper .card .Lower-Card-Container #arrow_down_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container #arrow_down_wrapper {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card .Lower-Card-Container #arrow_down_wrapper #arrow_down {
+.element_wrapper .card .Lower-Card-Container #arrow_down_wrapper #arrow_down,
+.element_wrapper_dark .card .Lower-Card-Container #arrow_down_wrapper #arrow_down {
   border: none;
   border-radius: 100%;
   min-width: 32px;
   min-height: 32px;
   box-shadow: 1px 1px rgba(128, 128, 128, 0.4);
 }
-.card .Lower-Card-Container #arrow_down_wrapper #arrow_down img {
+.element_wrapper .card .Lower-Card-Container #arrow_down_wrapper #arrow_down img,
+.element_wrapper_dark .card .Lower-Card-Container #arrow_down_wrapper #arrow_down img {
   min-width: 20px;
   min-height: 20px;
 }
-.card .Lower-Card-Container #lower_input_wrapper {
+.element_wrapper .card .Lower-Card-Container #lower_input_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_wrapper {
   display: flex;
   align-items: center;
 }
-.card .Lower-Card-Container #lower_input_wrapper img {
+.element_wrapper .card .Lower-Card-Container #lower_input_wrapper img,
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_wrapper img {
   max-width: 24px;
   max-height: 24px;
 }
-.card .Lower-Card-Container #lower_input_wrapper p {
+.element_wrapper .card .Lower-Card-Container #lower_input_wrapper p,
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_wrapper p {
   font-size: medium;
   font-weight: bold;
   color: #280D5f;
 }
-.card .Lower-Card-Container #lower_input_text {
+.element_wrapper .card .Lower-Card-Container #lower_input_text,
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_text {
   display: flex;
   justify-content: center;
   min-width: 294px;
@@ -122,26 +145,31 @@
   border: none;
   resize: none;
 }
-.card .Lower-Card-Container #lower_input_text:focus {
+.element_wrapper .card .Lower-Card-Container #lower_input_text:focus,
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_text:focus {
   border: 1px solid purple;
 }
-.card .Lower-Card-Container #low_risk_wrapper {
+.element_wrapper .card .Lower-Card-Container #low_risk_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container #low_risk_wrapper {
   display: flex;
   justify-content: end;
   align-items: center;
   padding: 8px;
 }
-.card .Lower-Card-Container #low_risk_wrapper button {
+.element_wrapper .card .Lower-Card-Container #low_risk_wrapper button,
+.element_wrapper_dark .card .Lower-Card-Container #low_risk_wrapper button {
   padding: 0px 8px;
   max-height: 28px;
   max-width: 92px;
   font-size: 14px;
 }
-.card .Lower-Card-Container #low_risk_wrapper img {
+.element_wrapper .card .Lower-Card-Container #low_risk_wrapper img,
+.element_wrapper_dark .card .Lower-Card-Container #low_risk_wrapper img {
   max-width: 14px;
   max-height: 14px;
 }
-.card .Lower-Card-Container .slippage_tolerance_wrapper {
+.element_wrapper .card .Lower-Card-Container .slippage_tolerance_wrapper,
+.element_wrapper_dark .card .Lower-Card-Container .slippage_tolerance_wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -150,19 +178,111 @@
   font-weight: bolder;
   font-size: 12px;
 }
-.card .Lower-Card-Container .slippage_tolerance_wrapper #p_percent {
+.element_wrapper .card .Lower-Card-Container .slippage_tolerance_wrapper #p_percent,
+.element_wrapper_dark .card .Lower-Card-Container .slippage_tolerance_wrapper #p_percent {
   flex: auto;
   display: flex;
   justify-content: end;
   color: #1fc7d4;
 }
-.card .Lower-Card-Container .slippage_tolerance_wrapper img {
+.element_wrapper .card .Lower-Card-Container .slippage_tolerance_wrapper img,
+.element_wrapper_dark .card .Lower-Card-Container .slippage_tolerance_wrapper img {
   max-height: 10px;
   max-width: 10px;
 }
-.card .Lower-Card-Container .connect_wallet {
+.element_wrapper .card .Lower-Card-Container .connect_wallet,
+.element_wrapper_dark .card .Lower-Card-Container .connect_wallet {
   min-width: 100%;
   padding: 8px 0px;
+}
+
+.element_wrapper .card {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.element_wrapper .card .Upper-Card-Container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+.element_wrapper .card .Upper-Card-Container :first-child {
+  color: #280D5f;
+}
+.element_wrapper .card .Upper-Card-Container :nth-child(2) {
+  color: #7a6eaa;
+}
+.element_wrapper .Lower-Card-Container .upper_input_wrapper p {
+  color: #280D5f;
+}
+.element_wrapper .Lower-Card-Container #upper_input_text_wrapper input {
+  background-color: #eeeaf4;
+}
+.element_wrapper .Lower-Card-Container #upper_input_text_wrapper input:focus {
+  border: 1px solid purple;
+}
+.element_wrapper .Lower-Card-Container #arrow_down_wrapper #arrow_down {
+  box-shadow: 1px 1px rgba(128, 128, 128, 0.4);
+}
+.element_wrapper .Lower-Card-Container #lower_input_wrapper p {
+  color: #280D5f;
+}
+.element_wrapper .Lower-Card-Container #lower_input_text {
+  background-color: #eeeaf4;
+}
+.element_wrapper .Lower-Card-Container #lower_input_text:focus {
+  border: 1px solid purple;
+}
+.element_wrapper .Lower-Card-Container .slippage_tolerance_wrapper {
+  color: #7645d9;
+}
+.element_wrapper .Lower-Card-Container .slippage_tolerance_wrapper #p_percent {
+  color: #1fc7d4;
+}
+
+.element_wrapper_dark .card {
+  background-color: rgb(39, 38, 44);
+  border: 1px solid #383241;
+}
+.element_wrapper_dark .card .Upper-Card-Container {
+  border-bottom: 1px solid #383241;
+}
+.element_wrapper_dark .card .Upper-Card-Container :first-child {
+  color: white;
+}
+.element_wrapper_dark .card .Upper-Card-Container :nth-child(2) {
+  color: #b8add2;
+}
+.element_wrapper_dark .card .Lower-Card-Container .upper_input_wrapper p {
+  color: white;
+}
+.element_wrapper_dark .card .Lower-Card-Container #upper_input_text_wrapper input {
+  background-color: #372f47;
+}
+.element_wrapper_dark .card .Lower-Card-Container #upper_input_text_wrapper input:focus {
+  border: 1px solid purple;
+}
+.element_wrapper_dark .card .Lower-Card-Container #arrow_down_wrapper #arrow_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #372f47;
+  box-shadow: 1px 1px #383241;
+}
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_wrapper p {
+  color: white;
+}
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_text {
+  background-color: #372f47;
+}
+.element_wrapper_dark .card .Lower-Card-Container #lower_input_text:focus {
+  border: 1px solid purple;
+}
+.element_wrapper_dark .card .Lower-Card-Container button {
+  color: black;
+}
+.element_wrapper_dark .card .Lower-Card-Container .slippage_tolerance_wrapper {
+  color: #7645d9;
+}
+.element_wrapper_dark .card .Lower-Card-Container .slippage_tolerance_wrapper #p_percent {
+  color: #1fc7d4;
 }
 
 /*# sourceMappingURL=card.css.map */

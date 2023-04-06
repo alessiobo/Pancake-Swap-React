@@ -1,12 +1,12 @@
 //sass --watch cardswap.scss cardswap.css
 
-.card_swap {
+.card_swap, .card_swap_dark {
     min-height: 760px;
     min-width: 390px;
-    background: linear-gradient(139.73deg,#e5fdff,#f3efff);
+    
     padding: 16px;
     padding-bottom: 0px;
-    .element_wrapper {
+    .element_wrapper, .element_wrapper_dark {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,13 +17,22 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .card {
-            height: 600px;
-            width: 300px;
-            background-color: white;
-            padding: 16px;
-            border-radius: 20px;
-            border: 1px solid rgb(128, 128, 128, 0.5);
-        }
+        // .card {
+        //     height: 600px;
+        //     width: 300px;
+        //     background-color: white;
+        //     padding: 16px;
+        //     border-radius: 20px;
+        //     border: 1px solid rgb(128, 128, 128, 0.5);
+        // }
     }
+}
+
+
+.card_swap {
+    background: linear-gradient(139.73deg,#e5fdff,#f3efff);
+}
+
+.card_swap_dark {
+    background: linear-gradient(139.73deg,#313d5c,#3d2a54);;
 }

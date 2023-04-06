@@ -1,75 +1,144 @@
 // sass --watch card.scss card.css
-.card {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(128, 128, 128, 0.5);
-    border-radius: 20px;
-    height: 588px;
-    width: 326px;
-    .Upper-Card-Container {
-        padding: 24px;
+.element_wrapper,
+.element_wrapper_dark {
+    .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        border-bottom: 1px solid rgb(128, 128, 128, 0.5);
-        :first-child {
-            margin-bottom: 15px;
-            color: #280D5f;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        :nth-child(2) {
-            font-size: 1rem;
-            color: #7a6eaa;
-            font-weight: 500;
-            padding: 10px 0px;
-        }
-        :nth-child(3) {
-            // padding-top: 20px;
-            width: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(128, 128, 128, 0.5);
+        border-radius: 20px;
+        height: 588px;
+        width: 326px;
+
+        .Upper-Card-Container {
+            padding: 24px;
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 2px;
-            div {
-                margin-bottom: 0px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+
+            :first-child {
+                margin-bottom: 15px;
+                color: #280D5f;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            :nth-child(2) {
+                font-size: 1rem;
+                color: #7a6eaa;
+                font-weight: 500;
+                padding: 10px 0px;
+            }
+
+            :nth-child(3) {
+                // padding-top: 20px;
+                width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: center;
-                max-width: 24px;
-                max-height: 24px;
-                img {
-                    max-height: inherit;
-                    max-width: inherit;
+                gap: 2px;
+
+                div {
                     margin-bottom: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 24px;
+                    max-height: 24px;
+
+                    img {
+                        max-height: inherit;
+                        max-width: inherit;
+                        margin-bottom: 0px;
+                    }
                 }
             }
         }
-    }
-    .Lower-Card-Container {
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        .upper_input_wrapper{
+
+        .Lower-Card-Container {
+            padding: 16px;
             display: flex;
-            align-items: center;
-            p {
-                font-size: medium;
-                font-weight: bold;
-                color: #280D5f;
+            flex-direction: column;
+
+            .upper_input_wrapper {
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-size: medium;
+                    font-weight: bold;
+                    color: #280D5f;
+                }
+
+                #bnb_golden,
+                #purple_input_wrapper {
+                    max-height: 24px;
+                    max-width: 24px;
+                }
+
             }
-            #bnb_golden, #purple_input_wrapper {
-               max-height: 24px;
-               max-width: 24px; 
+
+            #upper_input_text_wrapper {
+                min-width: 294px;
+                min-height: 78px;
+
+                input {
+                    display: flex;
+                    justify-content: center;
+                    min-width: 294px;
+                    min-height: 78px;
+                    background-color: #eeeaf4;
+                    border-radius: 10px;
+                    border: none;
+                    resize: none;
+
+                    &:focus {
+                        border: 1px solid purple;
+                    }
+                }
+
             }
-            
-        }
-        #upper_input_text_wrapper{
-            min-width: 294px;
-            min-height: 78px;
-            input {
+
+            #arrow_down_wrapper {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #arrow_down {
+                    border: none;
+                    border-radius: 100%;
+                    min-width: 32px;
+                    min-height: 32px;
+                    box-shadow: 1px 1px rgb(128, 128, 128, 0.4);
+
+                    img {
+                        min-width: 20px;
+                        min-height: 20px;
+                    }
+                }
+            }
+
+            #lower_input_wrapper {
+                display: flex;
+                align-items: center;
+
+                img {
+                    max-width: 24px;
+                    max-height: 24px;
+                }
+
+                p {
+                    font-size: medium;
+                    font-weight: bold;
+                    color: #280D5f;
+                }
+
+            }
+
+            #lower_input_text {
                 display: flex;
                 justify-content: center;
                 min-width: 294px;
@@ -78,94 +147,213 @@
                 border-radius: 10px;
                 border: none;
                 resize: none;
+
                 &:focus {
                     border: 1px solid purple;
                 }
             }
-            
-        }
-        #arrow_down_wrapper {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            #arrow_down {
-                border: none;
-                border-radius: 100%;
-                min-width: 32px;
-                min-height: 32px;
-                box-shadow: 1px 1px rgb(128, 128, 128, 0.4);
+
+            #low_risk_wrapper {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 8px;
+
+                button {
+                    padding: 0px 8px;
+                    max-height: 28px;
+                    max-width: 92px;
+                    font-size: 14px;
+                }
+
                 img {
-                    min-width: 20px;
-                    min-height: 20px;
+                    max-width: 14px;
+                    max-height: 14px;
                 }
             }
-        }
-        #lower_input_wrapper {
-            display: flex;
-            align-items: center;
-            img {
-                max-width: 24px;
-                max-height: 24px;
+
+            .slippage_tolerance_wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 8px;
+                color: #7645d9;
+                font-weight: bolder;
+                font-size: 12px;
+
+                #p_percent {
+                    flex: auto;
+                    display: flex;
+                    justify-content: end;
+                    color: #1fc7d4;
+                }
+
+                img {
+                    max-height: 10px;
+                    max-width: 10px;
+                }
             }
-            p {
-                font-size: medium;
-                font-weight: bold;
+
+            .connect_wallet {
+                min-width: 100%;
+                padding: 8px 0px;
+            }
+        }
+    }
+}
+
+//light mode
+.element_wrapper {
+    .card {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(128, 128, 128, 0.5);
+
+        .Upper-Card-Container {
+            border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+
+            :first-child {
                 color: #280D5f;
             }
-            
+
+            :nth-child(2) {
+                color: #7a6eaa;
+            }
+
         }
+    }
+
+    .Lower-Card-Container {
+
+        .upper_input_wrapper {
+
+            p {
+                color: #280D5f;
+            }
+
+        }
+
+        #upper_input_text_wrapper {
+
+            input {
+
+                background-color: #eeeaf4;
+
+                &:focus {
+                    border: 1px solid purple;
+                }
+            }
+
+        }
+
+        #arrow_down_wrapper {
+            #arrow_down {
+                box-shadow: 1px 1px rgb(128, 128, 128, 0.4);
+            }
+        }
+
+        #lower_input_wrapper {
+            p {
+                color: #280D5f;
+            }
+
+        }
+
         #lower_input_text {
-            display: flex;
-            justify-content: center;
-            min-width: 294px;
-            min-height: 78px;
             background-color: #eeeaf4;
-            border-radius: 10px;
-            border: none;
-            resize: none;
+
             &:focus {
                 border: 1px solid purple;
             }
         }
-        #low_risk_wrapper {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            padding: 8px;
-            button {
-                padding: 0px 8px;
-              max-height: 28px;
-              max-width: 92px;
-              font-size: 14px;
-            }
-            img {
-                max-width: 14px;
-                max-height: 14px;
-            }
-        }
+
         .slippage_tolerance_wrapper {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 8px;
             color: #7645d9;
-            font-weight: bolder;
-            font-size: 12px;
+
             #p_percent {
-                flex: auto;
-                display: flex;
-                justify-content: end;
-                color:  #1fc7d4;
-            }
-            img {
-                max-height: 10px;
-                max-width: 10px;
+                color: #1fc7d4;
             }
         }
-        .connect_wallet {
-            min-width: 100%;
-            padding: 8px 0px;
+    }
+}
+
+//dark mode
+.element_wrapper_dark {
+    .card {
+        background-color: rgb(39, 38, 44);
+        border: 1px solid #383241;
+
+        .Upper-Card-Container {
+            border-bottom: 1px solid #383241;
+
+            :first-child {
+                color: white;
+            }
+
+            :nth-child(2) {
+                color: #b8add2;
+            }
+
+        }
+
+
+        .Lower-Card-Container {
+
+            .upper_input_wrapper {
+
+                p {
+                    color: white;
+                }
+
+            }
+
+            #upper_input_text_wrapper {
+
+                input {
+
+                    background-color: #372f47;
+
+                    &:focus {
+                        border: 1px solid purple;
+                    }
+                }
+
+            }
+
+            #arrow_down_wrapper {
+                #arrow_down {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #372f47;
+                    box-shadow: 1px 1px #383241;
+                }
+            }
+
+            #lower_input_wrapper {
+                p {
+                    color: white;
+                }
+
+            }
+
+            #lower_input_text {
+                background-color: #372f47;
+
+                &:focus {
+                    border: 1px solid purple;
+                }
+            }
+                button {
+                    color: black;
+                }
+
+            .slippage_tolerance_wrapper {
+                color: #7645d9;
+
+                #p_percent {
+                    color: #1fc7d4;
+                }
+            }
         }
     }
 }
