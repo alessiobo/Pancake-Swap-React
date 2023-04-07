@@ -38,8 +38,6 @@
 }
 .nav-settings-section-cont .nav-settings-title-dark {
   color: #fff;
-}
-.nav-settings-section-cont .nav-settings-title-dark {
   background: transparent;
   border-bottom: 1px solid grey;
 }
@@ -53,6 +51,9 @@
   text-transform: uppercase;
   margin-bottom: 24px;
   font-size: 18px;
+}
+.nav-settings-section-cont-dark {
+  background: #27262c;
 }
 
 .nav-settings-content div {

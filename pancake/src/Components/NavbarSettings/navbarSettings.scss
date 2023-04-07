@@ -47,10 +47,9 @@
         cursor: pointer;
       }
     }
+
     .nav-settings-title-dark {
       color: #fff;
-    }
-    .nav-settings-title-dark {
       background: transparent;
       border-bottom: 1px solid grey;
     }
@@ -67,6 +66,10 @@
         font-size: 18px;
       }
     }
+  }
+
+  &-cont-dark {
+    background: #27262c;
   }
 }
 
