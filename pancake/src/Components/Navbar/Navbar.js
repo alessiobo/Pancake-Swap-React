@@ -78,6 +78,7 @@ function Navbar({ mode, setMode }) {
           </div>
           <div class="navbar-dropdowns">
             <button
+              style={{ border: "none", backgroundColor: "transparent" }}
               className={
                 darkMode
                   ? "navbar-btn-3-points-menu"
