@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+.checkbox-btn-dark {
+  background-color: #372f47;
+}
+
 .checkbox-btn-input[type="checkbox"] {
   display: none;
   width: 100px;
@@ -42,6 +46,10 @@
   top: 3px;
   width: 26px;
   transition: right 200ms ease-in 0s;
+}
+
+.checkbox-btn-point-dark {
+  background-color: #27262c;
 }
 
 .checkbox-btn-point-dark {
