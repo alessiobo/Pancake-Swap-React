@@ -1,25 +1,32 @@
-import { Link, useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../UI/Buttons/Button";
 import "./navbar.css";
 import { contextDarkMode } from "../UI/DarkMode/contextDarkMode";
-import { useContext } from "react";
-
+import { useContext, useState } from "react";
 
 //Immagini ed icone
-import logo_color_black from "./Icons/logo_black.svg"
-import logo_color_white from "./Icons/logo_white.svg"
-import three_dots_purple from "./Icons/three_dots_purple.svg"
-import logo_circle_green from "./Icons/logo_circle_green.svg"
-import world_purple from "./Icons/world_purple.svg"
-import gear_purple from "./Icons/gear_purple.svg"
-import bnb_golden from "./Icons/bnb_golden.svg"
-import arrow_down_purple from "./Icons/arrow_down_purple.svg"
-import ethereum_icon from "./Icons/ethereum.png"
-import aptos_icon from "./Icons/aptos_icon_white.svg"
+import logo_color_black from "./Icons/logo_black.svg";
+import logo_color_white from "./Icons/logo_white.svg";
+import three_dots_purple from "./Icons/three_dots_purple.svg";
+import logo_circle_green from "./Icons/logo_circle_green.svg";
+import world_purple from "./Icons/world_purple.svg";
+import gear_purple from "./Icons/gear_purple.svg";
+import bnb_golden from "./Icons/bnb_golden.svg";
+import arrow_down_purple from "./Icons/arrow_down_purple.svg";
+import ethereum_icon from "./Icons/ethereum.png";
+import aptos_icon from "./Icons/aptos_icon_white.svg";
+import NavbarSettings from "../NavbarSettings/NavbarSettings";
 
-function Navbar() {
+function Navbar({ mode, setMode }) {
   const navigate = useNavigate();
-  const darkMode = useContext(contextDarkMode)
+  const darkMode = useContext(contextDarkMode);
+
+  const [isSettings, setIsSettings] = useState(false);
+
+  const buttonHandler = () => {
+    setIsSettings(!isSettings);
+  };
+
   return (
     <div className={darkMode ? "navbar-black" : "navbar"}>
       <div class="navbar-container-logo-menu">
@@ -70,7 +77,13 @@ function Navbar() {
             </div>
           </div>
           <div class="navbar-dropdowns">
-            <button className={darkMode ? "navbar-btn-3-points-menu" : "navbar-btn-3-points-menu-dark"}>
+            <button
+              className={
+                darkMode
+                  ? "navbar-btn-3-points-menu"
+                  : "navbar-btn-3-points-menu-dark"
+              }
+            >
               <img
                 class="navbar-three-points-menu"
                 src={three_dots_purple}
@@ -101,21 +114,23 @@ function Navbar() {
         </div>
         <div class="navbar-language">
           <button class="navbar-btn-change-language">
-            <img
-              class="navbar-img-lng"
-              src={world_purple}
-              alt="world_purple"
-            />
+            <img class="navbar-img-lng" src={world_purple} alt="world_purple" />
           </button>
         </div>
         <div class="navbar-option">
-          <button class="navbar-btn-option">
+          <button class="navbar-btn-option" onClick={buttonHandler}>
             <img
               class="navbar-img-btn-option"
               src={gear_purple}
               alt="gear purple"
             />
           </button>
+          <NavbarSettings
+            mode={mode}
+            setMode={setMode}
+            isHidden={isSettings}
+            setHidden={setIsSettings}
+          />
         </div>
         <div class="navbar-dropdown-crypto">
           <button class="navbar-change-crypto">
@@ -142,19 +157,11 @@ function Navbar() {
               BNB Smart Chain
             </a>
             <a href="">
-              <img
-                class="navbar-img"
-                src={ethereum_icon}
-                alt="ethereum"
-              />
+              <img class="navbar-img" src={ethereum_icon} alt="ethereum" />
               Ethereum
             </a>
             <a href="">
-              <img
-                class="navbar-img"
-                src={aptos_icon}
-                alt="aptos_icon"
-              />
+              <img class="navbar-img" src={aptos_icon} alt="aptos_icon" />
               Aptos
             </a>
           </div>
