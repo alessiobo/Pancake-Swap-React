@@ -9,8 +9,8 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 
 import useCookies from "./Components/UI/DarkMode/useCookies";
-import Checkbox from "./Components/UI/Checkbox/Checkbox";
 import Nft from "./Components/Pages/Nft/Nft";
+import NotFound from "./Components/Pages/NotFound";
 
 function App() {
   const { mode, setMode } = useCookies();
@@ -25,6 +25,7 @@ function App() {
           <Route path="/limit" element={<LimitPage />} />
           <Route path="/liquidity" element={<LiquidityPage />} />
           <Route path="/nfts" element={<Nft />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer mode={mode} setMode={setMode} />
       </contextDarkMode.Provider>
