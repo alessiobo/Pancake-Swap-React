@@ -1,5 +1,6 @@
 * {
   font-family: Kanit, sans-serif;
+  font-weight: bold;
   color: azure;
 }
 
@@ -163,21 +164,53 @@
   line-height: 1;
   color: #fff;
 }
+.gg-spinner {
+  transform: scale(var(--ggs,1))
+ }
+ 
+ .gg-spinner,
+ .gg-spinner::after,
+ .gg-spinner::before {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #7a6eaf;
+ }
+ 
+ .gg-spinner::after,
+ .gg-spinner::before {
+  content: "";
+  position: absolute;
+  border-radius: 100px
+ }
+ 
+ .gg-spinner::before {
+  animation: spinner 1s
+  cubic-bezier(.6,0,.4,1) infinite;
+  border: 3px solid transparent;
+  border-top-color: currentColor
+ }
+ 
+ .gg-spinner::after {
+  border: 3px solid;
+  opacity: .2
+ }
+ 
+ 
+ @keyframes spinner {
+  0% { transform: rotate(0deg) }
+  to { transform: rotate(359deg) }
+ } 
 /*@media screen and (min-width: 968px){}
 .bunnyCard
  {
     padding: 32px 32px 0;}*/
 
-@media screen and (max-height: 900px) {
-  .bunnyLiquid {
-    width: 17vh;
-    position: relative;
-    top: -13.3vh;
-    right: -35vh;
-  }
-}
 
-@media screen and (max-width: 880px) {
+
+@media screen and (max-width: 1285px) {
   .bunnyCard {
     width: 80vh;
   }
@@ -192,4 +225,65 @@
   .card-content {
     text-align: left;
   }
+  .liquidityCard{
+    width: 80vh;
+  }
+
+}
+@media screen and (max-width: 1135px) {
+  .bunnyCard {
+    width: 60vh;
+  }
+
+  .bunnyLiquid {
+    width: 15vh;
+    position: relative;
+    top: -5.5vh;
+    right: -22vh;
+  }
+
+  .card-content {
+    text-align: left;
+  }
+  .liquidityCard{
+    width: 60vh;
+  }
+}
+@media screen and (max-width: 679px) {
+  .bunnyCard {
+    width: 40vh;
+  }
+
+  .bunnyLiquid {
+    width: 15vh;
+    position: relative;
+    top: -5.5vh;
+    right: -22vh;
+  }
+
+  .card-content {
+    text-align: left;
+  }
+  .liquidityCard{
+    width: 40vh;
+  }
+}
+@media screen and (max-width: 679px) {
+  .thirdRowLi {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 415px) {
+  .firstRowBu{
+    font-weight: 1px;
+   width: 10px;
+  }
+  .secondRowBu {
+    font-size: 7px;
+  }
+  .buttonLiquidity {
+    width: 10vh;
+    gap: 2vh;
+  }
+  
 }

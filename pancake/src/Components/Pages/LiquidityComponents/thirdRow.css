@@ -136,3 +136,13 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+  @media screen and (max-width: 679px) {
+    .thirdRowLi {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 415px) {
+    .switcherLi {
+      width:32.7vh;
+    }
+  }

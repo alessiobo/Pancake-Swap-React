@@ -30,7 +30,8 @@ export const Liquidity = () => {
         <div className="liquidityCard">
           <div className="firstRowLi">
             <h2>Your Liquidity</h2>
-            <p className="firstRowP">icona</p>
+            <i class="gg-spinner"></i>
+           
           </div>
           <div className="secondRowLi">
             <p>List of your liquidity positions</p>
