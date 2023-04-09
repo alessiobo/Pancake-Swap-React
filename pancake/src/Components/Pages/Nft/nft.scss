@@ -1,11 +1,17 @@
-@mixin sm-715px {
-  @media (min-width: 715px) {
+@mixin sm-880px {
+  @media (min-width: 880px) {
     @content;
   }
 }
 
-@mixin dm-1000px {
-  @media (min-width: 1000px) {
+@mixin m-1180px {
+  @media (min-width: 1180px) {
+    @content;
+  }
+}
+
+@mixin xs-650px {
+  @media (min-width: 650px) {
     @content;
   }
 }
@@ -25,12 +31,21 @@
   justify-items: center;
   gap: 20px;
 
-  @include sm-715px() {
+  @include xs-650px() {
     grid-template-columns: 1fr 1fr;
   }
-  @include dm-1000px() {
+
+  @include sm-880px() {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @include m-1180px() {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  // @include dm-1000px() {
+  //   grid-template-columns: 1fr 1fr 1fr 1fr;
+  // }
 }
 
 .nft-container-cards {
