@@ -13,15 +13,27 @@
   justify-items: center;
   gap: 20px;
 }
-@media (min-width: 715px) {
+@media (min-width: 650px) {
   .newestCollections-container {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 880px) {
   .newestCollections-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+@media (min-width: 1180px) {
+  .newestCollections-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.nft-container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=nft.css.map */

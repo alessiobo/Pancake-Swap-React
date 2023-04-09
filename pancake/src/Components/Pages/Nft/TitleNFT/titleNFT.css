@@ -8,14 +8,16 @@
 }
 
 .titleNFT-content {
-  padding: 40px 40px;
+  padding: 40px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .titleNFT-content {
     padding: 40px 24px;
+    align-items: start;
+    justify-content: flex-start;
   }
 }
 .titleNFT-content h2 {
@@ -25,7 +27,7 @@
   color: #7645d9;
   margin-bottom: 24px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .titleNFT-content h2 {
     font-size: 48px;
   }

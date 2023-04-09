@@ -1,5 +1,5 @@
-@mixin m-1000() {
-  @media (max-width: 1000px) {
+@mixin m-1400() {
+  @media (max-width: 1400px) {
     @content;
   }
 }
@@ -14,12 +14,19 @@
 }
 
 .titleNFT-content {
-  padding: 40px 40px;
+  // padding: 40px 40px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  padding: 40px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  @include m-1000() {
+  justify-content: space-around;
+
+  @include m-1400() {
     padding: 40px 24px;
+    align-items: start;
+    justify-content: flex-start;
   }
 
   h2 {
@@ -30,7 +37,7 @@
     color: #7645d9;
 
     margin-bottom: 24px;
-    @include m-1000() {
+    @include m-1400() {
       font-size: 48px;
     }
   }
