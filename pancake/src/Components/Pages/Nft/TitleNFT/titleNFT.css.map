@@ -1,10 +1,1 @@
-{
-  "version": 3,
-  "sourceRoot": "",
-  "sources": [
-    "titleNFT.scss"
-  ],
-  "names": [],
-  "mappings": "AAMA;EACE;EAEA;;;AAEF;EACE;;;AAGF;EACE;EACA;EACA;EACA;;AAlBA;EAcF;IAMI;;;AAGF;EACE;EACA;EACA;EAEA;EAEA;;AA9BF;EAuBA;IASI;;;AAGJ;EACE;EACA;EACA;EAEA;;AAEF;EACE",
-  "file": "titleNFT.css"
-}
+{"version":3,"sourceRoot":"","sources":["titleNFT.scss"],"names":[],"mappings":"AAMA;EACE;EAEA;;;AAEF;EACE;;;AAGF;EAKE;EACA;EACA;EACA;;AAtBA;EAcF;IAWI;IACA;IACA;;;AAGF;EACE;EACA;EACA;EAEA;EAEA;;AArCF;EA8BA;IASI;;;AAGJ;EACE;EACA;EACA;EAEA;;AAEF;EACE","file":"titleNFT.css"}

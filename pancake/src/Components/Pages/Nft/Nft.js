@@ -16,32 +16,35 @@ function Nft() {
     >
       {/* Navbar */}
 
-      <TitleNFT
-        title={"NFT Marketplace"}
-        subTitle={"Buy and Sell NFTs on BNB Smart Chain"}
-      />
-      <CardsCollection title={"Newest Collections"} />
-      <CardsCollection title={"Hot Collections"} />
+      <div className="nft-container-cards">
+        <TitleNFT
+          title={"NFT Marketplace"}
+          subTitle={"Buy and Sell NFTs on BNB Smart Chain"}
+        />
 
-      <ContainerCollections title={"Newest Arrivals"}>
-        <div className="newestCollections-container">
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-          <CardNewest />
-        </div>
-      </ContainerCollections>
+        <CardsCollection title={"Newest Collections"} />
+        <CardsCollection title={"Hot Collections"} />
+
+        <ContainerCollections title={"Newest Arrivals"}>
+          <div className="newestCollections-container">
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+            <CardNewest />
+          </div>
+        </ContainerCollections>
+      </div>
     </section>
   );
 }
