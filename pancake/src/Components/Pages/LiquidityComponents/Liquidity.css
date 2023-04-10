@@ -56,8 +56,11 @@
   margin-right: auto;
   width: 32.3vh;
   position: relative;
-  top: -23vh;
+  top: -24.6vh;
   right: -28vh;
+  opacity: 0.7; /* set the opacity of the image */
+  
+ 
 }
 
 .firstRowBu {
@@ -211,6 +214,11 @@
 
 
 @media screen and (max-width: 1285px) {
+  .firstRowBu,
+  .secondRowBu
+  {
+    font-size: 16px;
+  }
   .bunnyCard {
     width: 80vh;
   }
@@ -218,8 +226,8 @@
   .bunnyLiquid {
     width: 17vh;
     position: relative;
-    top: -13.3vh;
-    right: -35vh;
+    top: -11.6vh;
+    right: -30vh;
   }
 
   .card-content {
@@ -238,7 +246,7 @@
   .bunnyLiquid {
     width: 15vh;
     position: relative;
-    top: -5.5vh;
+    top: -12.2vh;
     right: -22vh;
   }
 
@@ -272,18 +280,46 @@
   .thirdRowLi {
     flex-wrap: wrap;
   }
+  .firstRowBu,
+  .secondRowBu
+  {
+    font-size: 11.5px;
+  }
+  .buttonLiquidity button {
+    width: 8vh;
+    height: 5vh;
+    gap: 0vh;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bunnyLiquid {
+    width: 12vh;
+    position: relative;
+    top: -7.4vh;
+    right: -12vh;
+  }
+  
 }
 @media screen and (max-width: 415px) {
-  .firstRowBu{
-    font-weight: 1px;
-   width: 10px;
+  .firstRowBu,
+  .secondRowBu
+  {
+    font-size: 11.5px;
   }
-  .secondRowBu {
-    font-size: 7px;
+  .buttonLiquidity button {
+    width: 8vh;
+    height: 5vh;
+    gap: 0vh;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
   }
-  .buttonLiquidity {
-    width: 10vh;
-    gap: 2vh;
+  .bunnyLiquid {
+    width: 12vh;
+    position: relative;
+    top: -7.4vh;
+    right: -12vh;
   }
   
 }

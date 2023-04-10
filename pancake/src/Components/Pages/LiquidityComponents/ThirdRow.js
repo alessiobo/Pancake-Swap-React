@@ -10,7 +10,7 @@ function ThirdRowLi() {
 
   return (
     <div className="thirdRowLi">
-      <label style={{ color: "#7A6EAF" }} className="containerCheck" >Hide closed positions
+      <label style={{ color: "#7A6EAF",fontSize:"10px" }} className="containerCheck" >Hide closed positions
         <input type="checkbox" checked={hideClosedPositions} onChange={handleCheckboxChange} />
         <span class="checkmark"></span>
       </label>
