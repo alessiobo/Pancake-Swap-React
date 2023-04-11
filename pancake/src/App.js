@@ -23,10 +23,10 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/swap" element={<SwapPage />} />
-          <Route path="/limit" element={<LimitPage />} />
-          <Route path="/liquidity" element={<LiquidityPage />} />
-          <Route path="/nfts" element={<Nft />} />
+          <Route path="/Swap" element={<SwapPage />} />
+          <Route path="/Limit" element={<LimitPage />} />
+          <Route path="/Liquidity" element={<LiquidityPage />} />
+          <Route path="/Nfts" element={<Nft />} />
         </Routes>
         <Footer mode={mode} setMode={setMode} />
       </contextDarkMode.Provider>

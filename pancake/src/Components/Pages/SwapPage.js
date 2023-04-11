@@ -4,7 +4,7 @@ import Underbar from "../UnderBar-Swap-Section/underbar"
 function SwapPage() {
     return (
         <div className="swappage">
-            <Underbar/>
+            <Underbar slot1="Swap" slot2="Liquidity" slot3=""/>
             <Cardswap />
         </div>
     )
