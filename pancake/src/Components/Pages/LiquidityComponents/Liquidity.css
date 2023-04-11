@@ -54,11 +54,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 32.3vh;
+  width: 30.3vh;
   position: relative;
-  top: -24.6vh;
-  right: -28vh;
-  opacity: 0.7; /* set the opacity of the image */
+  top: -22.4vh;
+  right: -30vh;
+  opacity: 0.9; /* set the opacity of the image */
   
  
 }
