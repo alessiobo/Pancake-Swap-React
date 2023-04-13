@@ -2,7 +2,7 @@
 
 ## This is a PancakeSwap website clone, built using :
 
-- HTML
+- React
 - CSS 
 - SASS
 - JavaScript

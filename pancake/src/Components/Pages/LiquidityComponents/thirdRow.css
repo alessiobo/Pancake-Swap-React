@@ -1,0 +1,153 @@
+.thirdRowLi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 2vh;
+  }
+  
+  .thirdRowLi p {
+    color: #7a6eaf;
+  }
+  
+  .switcherLi {
+    display: flex;
+    width: 36.8vh;
+    height: 3.5vh;
+    background-color:#EEEAF4;
+    justify-self: flex-end;
+    border-radius: 10px;
+   
+    justify-content: center;
+  }
+  .firstBt button{
+    width:9.2vh;
+    height: 3.5vh;
+    border-radius: 10px;
+    border: #EEEAF4;
+    color: #8B6EAA;
+  }
+  .secondBt button{
+    width: 9.2vh;
+    height: 3.5vh;
+    border-radius: 10px;
+    border: #EEEAF4;
+    color: #8B6EAA;
+  }
+  .thirdBt button{
+    width:9.2vh;
+    height: 3.5vh;
+    border-radius: 10px;
+    border: #EEEAF4;
+    color: #8B6EAA;
+  }
+  .fourthBt button {
+    width: 9.2vh;
+    height: 3.5vh;
+    border-radius: 10px;
+    border: #EEEAF4;
+    color: #8B6EAA;
+
+  }
+
+  .firstBt button:focus{
+    background-color:#A29AC4 ;
+  }
+  .firstBt button:hover{
+    color: white;
+  }
+
+  .secondBt button:focus{
+    background-color:#A29AC4 ;
+  }
+  .secondBt button:hover{
+    color: white;
+  }
+  .thirdBt button:focus{
+    background-color:#A29AC4 ;
+  }
+  .thirdBt button:hover{
+    color: white;
+  }
+  .fourthBt button:focus{
+    background-color:#A29AC4 ;
+  }
+  .fourthBt button:hover{
+    color: white;
+  }
+
+
+
+
+  .containerCheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+  }
+  .containerCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    
+  }
+  .checkmark {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 8px;
+  }
+  .containerCheck input:checked ~ .checkmark {
+    background-color:#31D0AA;
+  }
+  .containerCheck:hover input ~ .checkmark {
+    background-color: #ccc;
+    border:solid 3px #AD8FE8 ;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+  }
+  .containerCheck input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .containerCheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  @media screen and (max-width: 679px) {
+    .thirdRowLi {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 415px) {
+    .switcherLi {
+      width:32.7vh;
+    }
+  }
+  @media screen and (max-width: 1135px){
+    .switcherLi {
+      width:32.7vh;
+    }
+  }
