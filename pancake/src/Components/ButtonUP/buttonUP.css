@@ -1,0 +1,10 @@
+.buttonUP-container {
+  position: sticky;
+  z-index: 500;
+  bottom: 155px;
+  display: flex;
+  justify-content: end;
+  margin-right: 55px;
+}
+
+/*# sourceMappingURL=buttonUP.css.map */
