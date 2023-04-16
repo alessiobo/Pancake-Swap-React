@@ -1,0 +1,34 @@
+.Image_Text_Wrapper {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 16px;
+  position: relative;
+  z-index: 0;
+}
+.Image_Text_Wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Image_Text_Wrapper div .Bridge_assets {
+  margin: 20px 0px;
+  color: #1FC7D4;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.Image_Text_Wrapper div .need_help {
+  background-color: purple;
+  border-radius: 10px;
+  width: 168px;
+  height: 42px;
+}
+.Image_Text_Wrapper div img {
+  max-width: 160px;
+  max-height: 180px;
+}
+
+/*# sourceMappingURL=Image_Text_Wrapper.css.map */
