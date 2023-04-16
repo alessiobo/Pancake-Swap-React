@@ -11,6 +11,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import useCookies from "./Components/UI/DarkMode/useCookies";
 import Nft from "./Components/Pages/Nft/Nft";
 import NotFound from "./Components/Pages/NotFound";
+import ButtonUP from "./Components/ButtonUP/ButtonUP";
 
 function App() {
   const { mode, setMode } = useCookies();
@@ -28,6 +29,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer mode={mode} setMode={setMode} />
+        <ButtonUP />
       </contextDarkMode.Provider>
     </div>
   );

@@ -22,7 +22,7 @@ function HeroSection() {
       id="hero-section"
       className={`hero-section ${darkMode ? "hero-section-dark" : ""}`}
     >
-      <div className="hero-section-content">
+      <div id="top" className="hero-section-content">
         <HeroSectionBanner />
 
         <div className="hero-homepage">
