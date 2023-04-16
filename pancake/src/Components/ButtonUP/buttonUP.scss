@@ -1,12 +1,9 @@
 .buttonUP-container {
-  position: sticky;
+  position: fixed;
   z-index: 500;
 
   bottom: 155px;
-
-  display: flex;
-  justify-content: end;
-  margin-right: 80px;
+  right: 5%;
 }
 
 .visible {
