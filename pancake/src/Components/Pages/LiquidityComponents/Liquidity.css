@@ -1,29 +1,24 @@
-* {
-  font-family: Kanit, sans-serif;
-  font-weight: bold;
-  color: azure;
-}
-
-.container {
+.containerLiquid {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: #e9faff;
   width: 100%;
   height: 100%;
   padding-top: 5vh;
   padding-bottom: 6vh;
+  font-family: Kanit, sans-serif;
+  font-weight: bold;
+  color: azure;
 }
 
-.bunnyContent {
+.liquidContent {
   display: flex;
   flex-direction: column;
-
   gap: 1vh;
 }
 
-.bunnyCard {
+.liquidCardT {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -39,28 +34,25 @@
   background-size: cover;
 }
 
-.btn {
-  height: 5vh;
-  width: 12vh;
-}
-
 .buttonLiquidity {
   display: flex;
   width: 18vh;
   gap: 2vh;
+}
+.buttonLiquidity button {
+  height: 5vh;
+  width: 12vh;
 }
 
 .bunnyLiquid {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30.3vh;
+  width: 30vh;
   position: relative;
-  top: -22.4vh;
+  top: -22.6vh;
   right: -30vh;
-  opacity: 0.9; /* set the opacity of the image */
-  
- 
+  opacity: 0.9; 
 }
 
 .firstRowBu {
@@ -72,7 +64,7 @@
 }
 
 .secondRowBu {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .liquidityCard {
@@ -95,7 +87,7 @@
 
 .firstRowLi h2 {
   color: #280d5f;
-  font-size: 19px
+  font-size: 19px;
 }
 
 .secondRowLi p {
@@ -107,9 +99,6 @@
   justify-self: flex-end;
   color: #7a6eaf;
 }
-
-
-
 
 .fourthRowLi {
   display: inline-flex;
@@ -123,14 +112,12 @@
   border: 0px;
   border-radius: 16px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.03em;
   line-height: 1;
-  background-color:#EEEAF4;
-
+  background-color: #eeeaf4;
   position: relative;
   top: 4vh;
 }
@@ -142,11 +129,10 @@
 
 .btnBottom {
   position: relative;
-
   top: 6vh;
 }
 
-.btn1 {
+.btnLiq {
   background-color: #1fc7d4;
   display: inline-flex;
   -webkit-box-align: center;
@@ -168,58 +154,57 @@
   color: #fff;
 }
 .gg-spinner {
-  transform: scale(var(--ggs,1))
- }
- 
- .gg-spinner,
- .gg-spinner::after,
- .gg-spinner::before {
+  transform: scale(var(--ggs, 1));
+}
+
+.gg-spinner,
+.gg-spinner::after,
+.gg-spinner::before {
   box-sizing: border-box;
   position: relative;
   display: block;
   width: 20px;
   height: 20px;
   color: #7a6eaf;
- }
- 
- .gg-spinner::after,
- .gg-spinner::before {
+}
+
+.gg-spinner::after,
+.gg-spinner::before {
   content: "";
   position: absolute;
-  border-radius: 100px
- }
- 
- .gg-spinner::before {
-  animation: spinner 1s
-  cubic-bezier(.6,0,.4,1) infinite;
+  border-radius: 100px;
+}
+
+.gg-spinner::before {
+  animation: spinner 1s cubic-bezier(0.6, 0, 0.4, 1) infinite;
   border: 3px solid transparent;
-  border-top-color: currentColor
- }
- 
- .gg-spinner::after {
+  border-top-color: currentColor;
+}
+
+.gg-spinner::after {
   border: 3px solid;
-  opacity: .2
- }
- 
- 
- @keyframes spinner {
-  0% { transform: rotate(0deg) }
-  to { transform: rotate(359deg) }
- } 
+  opacity: 0.2;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 /*@media screen and (min-width: 968px){}
 .bunnyCard
  {
     padding: 32px 32px 0;}*/
 
-
-
 @media screen and (max-width: 1285px) {
   .firstRowBu,
-  .secondRowBu
-  {
+  .secondRowBu {
     font-size: 16px;
   }
-  .bunnyCard {
+  .liquidCardT {
     width: 80vh;
   }
 
@@ -230,16 +215,13 @@
     right: -30vh;
   }
 
-  .card-content {
-    text-align: left;
-  }
-  .liquidityCard{
+
+  .liquidityCard {
     width: 80vh;
   }
-
 }
 @media screen and (max-width: 1135px) {
-  .bunnyCard {
+  .liquidCardT {
     width: 60vh;
   }
 
@@ -250,15 +232,13 @@
     right: -22vh;
   }
 
-  .card-content {
-    text-align: left;
-  }
-  .liquidityCard{
+
+  .liquidityCard {
     width: 60vh;
   }
 }
 @media screen and (max-width: 679px) {
-  .bunnyCard {
+  .liquidCardT {
     width: 40vh;
   }
 
@@ -269,10 +249,8 @@
     right: -22vh;
   }
 
-  .card-content {
-    text-align: left;
-  }
-  .liquidityCard{
+  
+  .liquidityCard {
     width: 40vh;
   }
 }
@@ -281,8 +259,7 @@
     flex-wrap: wrap;
   }
   .firstRowBu,
-  .secondRowBu
-  {
+  .secondRowBu {
     font-size: 11.5px;
   }
   .buttonLiquidity button {
@@ -299,12 +276,10 @@
     top: -7.4vh;
     right: -12vh;
   }
-  
 }
 @media screen and (max-width: 415px) {
   .firstRowBu,
-  .secondRowBu
-  {
+  .secondRowBu {
     font-size: 11.5px;
   }
   .buttonLiquidity button {
@@ -321,5 +296,4 @@
     top: -7.4vh;
     right: -12vh;
   }
-  
 }

@@ -5,9 +5,9 @@ import coniglio from "./bunny.webp";
 
 export const Liquidity = () => {
   return (
-    <div className="container">
-      <div className="bunnyContent">
-        <div className="bunnyCard">
+    <div className="containerLiquid">
+      <div className="liquidContent">
+        <div className="liquidCardT">
           <div className="firstRowBu">
             <h1>PancakeSwap v3 Migration</h1>
           </div>
@@ -42,7 +42,7 @@ export const Liquidity = () => {
             <p>No liquidity found.</p>
           </div>
           <div className="btnBottom">
-          <Button type={"btn1"} img={"arrR"} >
+          <Button type={"btnLiq"} img={"arrR"} >
               Add Liquidity
             </Button>
             </div>
