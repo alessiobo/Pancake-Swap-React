@@ -230,25 +230,24 @@
   .bunnyLiquid {
     width: 15vh;
     position: relative;
-    top: -13.4vh;
-    right: -21vh;
+    top: -12.4vh;
+    right: -20vh;
   }
 
 
   .liquidityCard {
     width: 60vh;
   }
-}
-@media screen and (max-width: 679px) {
-  .liquidCardT {
-    width: 40vh;
+  .buttonLiquidity button {
+    width: 19vh;
+    height: 4vh;
+    gap: 0vh;
+    font-size: 10px;
+
   }
 
-
-
-  
- 
 }
+
 @media screen and (max-width: 679px) {
   .thirdRowLi {
     flex-wrap: wrap;
