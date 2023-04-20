@@ -50,9 +50,9 @@
   margin-right: auto;
   width: 30vh;
   position: relative;
-  top: -22.6vh;
+  top: -23.7vh;
   right: -30vh;
-  opacity: 0.9; 
+   
 }
 
 .firstRowBu {
@@ -61,10 +61,12 @@
   width: 100vh;
   height: 150px;
   font-size: 20px;
+  z-index: 1;
 }
 
 .secondRowBu {
   font-size: 18px;
+  z-index: 1;
 }
 
 .liquidityCard {
@@ -211,7 +213,7 @@
   .bunnyLiquid {
     width: 17vh;
     position: relative;
-    top: -11.6vh;
+    top: -12.7vh;
     right: -30vh;
   }
 
@@ -228,8 +230,8 @@
   .bunnyLiquid {
     width: 15vh;
     position: relative;
-    top: -12.2vh;
-    right: -22vh;
+    top: -13.4vh;
+    right: -21vh;
   }
 
 
@@ -242,17 +244,10 @@
     width: 40vh;
   }
 
-  .bunnyLiquid {
-    width: 15vh;
-    position: relative;
-    top: -5.5vh;
-    right: -22vh;
-  }
+
 
   
-  .liquidityCard {
-    width: 40vh;
-  }
+ 
 }
 @media screen and (max-width: 679px) {
   .thirdRowLi {
@@ -273,8 +268,14 @@
   .bunnyLiquid {
     width: 12vh;
     position: relative;
-    top: -7.4vh;
+    top: -8.5vh;
     right: -12vh;
+  }
+  .liquidCardT {
+    width: 40vh;
+  }
+  .liquidityCard {
+    width: 40vh;
   }
 }
 @media screen and (max-width: 415px) {
@@ -293,7 +294,7 @@
   .bunnyLiquid {
     width: 12vh;
     position: relative;
-    top: -7.4vh;
+    top: -8.4vh;
     right: -12vh;
   }
 }
